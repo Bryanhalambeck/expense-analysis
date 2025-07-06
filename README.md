@@ -72,6 +72,12 @@ This project uses Python, DuckDB, pandas, and visualization libraries to:
   
 ---
 
+## 🛠️ How It Works 
+
+
+
+---
+
 ## 🚀 How to Run
 
 1. **Clone the repo**
