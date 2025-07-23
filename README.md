@@ -62,7 +62,7 @@ project-folder/
 │   └── 01_sales_office_supplies_analysis.py        # Full analysis script
 │
 ├── data/
-│   └── Untitledspreadsheet72.csv                   # Cleaned expense data
+│   └── SmallCompany.csv                   # Cleaned expense data
 │
 ├── charts/
 │   ├── monthly_spend.png
@@ -98,7 +98,7 @@ Due to time constraints, I focused instead on building a strong, polished deep d
 
 ---
 
-## 🎥 Optional: Loom Video (if added)
+## 🎥 Loom Video 
 
 [Watch the walk-through →](https://loom.com/your-link-here)
 
