@@ -30,7 +30,7 @@ This project analyzes expense transactions from a small company to identify pote
 
 - **Department Focus**: Sales  
 - **Category Analyzed**: Office Supplies  
-- **Dataset**: Internal transactions with columns like `date`, `employee`, `vendor`, `amount`, `category`, `department`  
+- **Dataset**: Internal transactions with columns `date`, `id`, `employee`, `vendor`, `amount`, `category`, `department`  
 - **Tools Used**: Python, Pandas, DuckDB, Seaborn, Matplotlib, Z-score analysis, Custom benchmarking
 
 ---
