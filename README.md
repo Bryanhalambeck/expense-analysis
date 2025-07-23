@@ -20,72 +20,171 @@ Your goal is to turn this data into clear, actionable insights that help the tea
 
 ---
 
-## 📁 Folder Structure
-/Expenses-Analysis-Project
-├─ data/               # Raw CSV expense data
-├─ scripts/            # Python scripts for analysis
-├─ charts/             # Saved visuals (optional)
-├─ notebooks/          # If you have Jupyter notebooks
-├─ README.md           # This file
-└─ requirements.txt    # Python 
+# 💼 Sales Department – Office Supplies Expense Analysis
+
+This project analyzes expense transactions from a small company to identify potential red flags, imbalances, and opportunities for oversight improvement — focusing specifically on the **Sales department's Office Supplies spending**. The goal was to surface actionable insights using real-world data analysis techniques and custom benchmarks.
 
 ---
 
-## 📊 Analysis Overview
+## 🔍 Project Summary
 
-This project explores departmental spending trends and flags potential outliers.
-
-**Key scripts:**
-- `scripts/monthly_trends.py`: Analyzes spend by month for trends and outliers.
-- `scripts/large_transactions.py`: Pulls largest transactions by department.
-- `scripts/global_outliers.py`: Flags unusual transactions across the dataset.
-- `scripts/monthly_dept_zscores.py`: Compares monthly spend with z-scores by department.
-- `scripts/dept_spend_outliers.py`: Combines department-level spend, averages, and outlier rates.
-
-Visuals are saved in the `charts/` folder for easy review.
-
-This project uses Python, DuckDB, pandas, and visualization libraries to:
-- Calculate spending trends by month.
-- Find outliers across departments and categories.
-- Visualize expense patterns with heatmaps and scatter plots.
-- Benchmark department spending against company averages and custom tiers.
+- **Department Focus**: Sales  
+- **Category Analyzed**: Office Supplies  
+- **Dataset**: Internal transactions with columns like `date`, `employee`, `vendor`, `amount`, `category`, `department`  
+- **Tools Used**: Python, Pandas, DuckDB, Seaborn, Matplotlib, Z-score analysis, Custom benchmarking
 
 ---
 
-## 🔑 Key Insights
+## 📈 Key Insights
 
+- **⚠️ Single Outlier Transaction**:  
+  One purchase in May 2025 ($972.45 at Staples) accounted for **over 40%** of the Sales department’s annual spend in this category — standing more than **2.2 standard deviations above** the norm.
+
+- **👤 Employee-Level Imbalance**:  
+  David Kim alone accounted for over **40% of total spend** — a potential sign of informal role specialization or policy drift. Frank Wu, by contrast, spent **over 1 SD below** the team average.
+
+- **🏪 Vendor Concentration**:  
+  Staples received 60% of total spend and was flagged as a **vendor-level outlier** (z > 1.5). This concentration may reflect a preferred supplier or warrant a pricing/policy review.
+
+- **📅 Timing Irregularities**:  
+  Transactions occurred on a **Saturday** and **two holidays**, which may require review for proper policy adherence.
+
+- **📊 Benchmark Deviation**:  
+  Sales had the **largest deviation (+28.3)** from expected Office Supplies spending compared to all other departments and categories — based on a custom benchmark system.
+
+---
+
+## 📂 Repository Structure
+# 💼 Sales Department – Office Supplies Expense Analysis
+
+This project analyzes expense transactions from a small company to identify potential red flags, imbalances, and opportunities for oversight improvement — focusing specifically on the **Sales department's Office Supplies spending**. The goal was to surface actionable insights using real-world data analysis techniques and custom benchmarks.
+
+---
+
+## 🔍 Project Summary
+
+- **Department Focus**: Sales  
+- **Category Analyzed**: Office Supplies  
+- **Dataset**: Internal transactions with columns like `date`, `employee`, `vendor`, `amount`, `category`, `department`  
+- **Tools Used**: Python, Pandas, DuckDB, Seaborn, Matplotlib, Z-score analysis, Custom benchmarking
+
+---
+
+## 📈 Key Insights
+
+- **⚠️ Single Outlier Transaction**:  
+  One purchase in May 2025 ($972.45 at Staples) accounted for **over 40%** of the Sales department’s annual spend in this category — standing more than **2.2 standard deviations above** the norm.
+
+- **👤 Employee-Level Imbalance**:  
+  David Kim alone accounted for over **40% of total spend** — a potential sign of informal role specialization or policy drift. Frank Wu, by contrast, spent **over 1 SD below** the team average.
+
+- **🏪 Vendor Concentration**:  
+  Staples received 60% of total spend and was flagged as a **vendor-level outlier** (z > 1.5). This concentration may reflect a preferred supplier or warrant a pricing/policy review.
+
+- **📅 Timing Irregularities**:  
+  Transactions occurred on a **Saturday** and **two holidays**, which may require review for proper policy adherence.
+
+- **📊 Benchmark Deviation**:  
+  Sales had the **largest deviation (+28.3)** from expected Office Supplies spending compared to all other departments and categories — based on a custom benchmark system.
+
+---
+
+## 📂 Repository Structure
+# 💼 Sales Department – Office Supplies Expense Analysis
+
+This project analyzes expense transactions from a small company to identify potential red flags, imbalances, and opportunities for oversight improvement — focusing specifically on the **Sales department's Office Supplies spending**. The goal was to surface actionable insights using real-world data analysis techniques and custom benchmarks.
+
+---
+
+## 🔍 Project Summary
+
+- **Department Focus**: Sales  
+- **Category Analyzed**: Office Supplies  
+- **Dataset**: Internal transactions with columns like `date`, `employee`, `vendor`, `amount`, `category`, `department`  
+- **Tools Used**: Python, Pandas, DuckDB, Seaborn, Matplotlib, Z-score analysis, Custom benchmarking
+
+---
+
+## 📈 Key Insights
+
+- **⚠️ Single Outlier Transaction**:  
+  One purchase in May 2025 ($972.45 at Staples) accounted for **over 40%** of the Sales department’s annual spend in this category — standing more than **2.2 standard deviations above** the norm.
+
+- **👤 Employee-Level Imbalance**:  
+  David Kim alone accounted for over **40% of total spend** — a potential sign of informal role specialization or policy drift. Frank Wu, by contrast, spent **over 1 SD below** the team average.
+
+- **🏪 Vendor Concentration**:  
+  Staples received 60% of total spend and was flagged as a **vendor-level outlier** (z > 1.5). This concentration may reflect a preferred supplier or warrant a pricing/policy review.
+
+- **📅 Timing Irregularities**:  
+  Transactions occurred on a **Saturday** and **two holidays**, which may require review for proper policy adherence.
+
+- **📊 Benchmark Deviation**:  
+  Sales had the **largest deviation (+28.3)** from expected Office Supplies spending compared to all other departments and categories — based on a custom benchmark system.
+
+---
+
+## 📂 Repository Structure
+project-folder/
+│
+├── scripts/
+│   └── 01_sales_office_supplies_analysis.py        # Full analysis script
+│
+├── data/
+│   └── Untitledspreadsheet72.csv                   # Cleaned expense data
+│
+├── charts/
+│   ├── monthly_spend.png
+│   ├── vendor_pie_chart.png
+│   ├── zscore_outlier_plot.png
+│   └── benchmark_heatmap.png
+│
+└── README.md                                        # Project overview and insights
+
+---
+
+## 📌 What I Planned (But Didn't Finish)
+
+Originally, I planned to extend this analysis to cover:
+
+- **Full Company Policy Check** (all departments/categories)
+- **Same-Day Vendor Flagging**
+- **Full Vendor Benchmarking**
+- **Departmental Timing Patterns**
+
+Due to time constraints, I focused instead on building a strong, polished deep dive into the Sales department — but I included my broader plan here to show my workflow and thought process.
+
+---
+
+## 🧠 Skills Demonstrated
+
+- Real-world anomaly detection using z-scores
+- Custom business benchmarking logic
+- Transaction filtering and aggregation
+- Visual storytelling with charts
+- SQL-like analysis using DuckDB in Python
+- Communicating complex insights clearly
+
+---
+
+## 🎥 Optional: Loom Video (if added)
+
+[Watch the walk-through →](https://loom.com/your-link-here)
+
+---
+
+## ✍️ Author
+
+**Bryan H.**  
+Aspiring Data Analyst focused on business intelligence, expense optimization, and operational insight.
 
   
----
-
-## 🛠️ How It Works 
 
 
 
----
 
-## 🚀 How to Run
 
-1. **Clone the repo**
-   ```bash
-   git clone https://github.com/YOUR-USERNAME/Expenses-Analysis-2023.git
-   cd Expenses-Analysis-2023
-   ```
    
-2. **Install dependencies**
-   ```bash
-   pip install -r requirements.txt
-   ```
-   
-3. **Run an analyst script**
-   ```bash
-   python scripts/your_script_name.py
-   ```
-   
----
-
-## ✅ Insights Covered
-
 
 
 
