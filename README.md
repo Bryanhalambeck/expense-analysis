@@ -1,26 +1,22 @@
-# expense-analysis-2023
+# expense-analysis
 
 ## 🏢 Example Company Description
 
-The company is a mid-sized **tech and professional services firm** with around **300 employees**. It provides **custom software development**, **IT consulting**, and **marketing strategy services** for clients across industries.  
-The organization has five core departments:  
+The company is a small, specialized tech and professional services firm run by a lean team of six core employees. This tight-knit group handles custom software development, IT support, marketing campaigns, sales operations, and HR tasks for a range of clients across industries.
 
-- **Engineering** – Handles software and product development projects for clients.  
-- **Marketing** – Manages client marketing campaigns, digital advertising, branding, and internal promotions.  
-- **Sales** – Focuses on acquiring new clients, managing relationships, and attending industry events.  
-- **Human Resources (HR)** – Oversees hiring, employee training, and benefits administration.  
-- **Information Technology (IT)** – Supports the internal tech infrastructure and client IT implementations.
+Because the company is small and agile, each employee wears multiple hats — working across departments to manage different projects, budgets, and client needs. As a result, all six employees are expected to share spending responsibilities equally — meaning their expenses should generally be balanced across departments and categories.
 
-The company works both **remotely and in-office**, with travel required for client meetings, conferences, and trainings.
+The organization maintains clear expense policies to keep spending in check while balancing remote and in-office work, plus regular travel for client meetings, conferences, and training.
 
 ---
 
-## 💼 Business Scenario: Expense Review for Finance Team
+💼 Business Scenario: Expense Review for Finance
 
-You’re a **data analyst** at a mid-sized company. The **finance department** has asked you to **explore internal expense records** from the past year.
+You’re the sole data analyst supporting this small team. The finance lead has asked you to analyze the company’s expense records from the past year to spot early red flags, policy violations, or cost-saving opportunities.
 
-Their goal is to **better understand how different departments are spending money** and to **identify any early red flags or cost-saving opportunities**.  
-You’ve been provided with a **raw expense table** that includes details like **date, department, category, employee, vendor, and amount**.
+You’ve been given a raw expense file that includes details like date, department, category, employee, vendor, and amount — all linked back to the same six employees who spend across every department.
+
+Your goal is to turn this data into clear, actionable insights that help the team spend wisely and stick to budget as they grow — while flagging any spending patterns that look significantly above or below the fair share expected for each employee.
 
 ---
 
