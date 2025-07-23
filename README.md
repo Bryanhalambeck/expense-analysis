@@ -20,14 +20,6 @@ Your goal is to turn this data into clear, actionable insights that help the tea
 
 ---
 
-## 📊 Project Goals
-
-- Understand how each department is spending money.
-- Spot unusual spending patterns or cost-saving opportunities.
-- Provide clear visuals and actionable insights for the finance team.
-  
----
-
 ## 📁 Folder Structure
 /Expenses-Analysis-Project
 ├─ data/               # Raw CSV expense data
@@ -62,9 +54,7 @@ This project uses Python, DuckDB, pandas, and visualization libraries to:
 
 ## 🔑 Key Insights
 
-- Sales spends less than expected on Meals but more on Software.
-- Some spikes in Sales transactions suggest one-off costs worth reviewing.
-- Engineering shows higher spend on Training and Office Supplies than peers.
+
   
 ---
 
@@ -96,11 +86,7 @@ This project uses Python, DuckDB, pandas, and visualization libraries to:
 
 ## ✅ Insights Covered
 
-- Department spending vs. company averages (z-scores)
-- Outlier detection on transactions
-- Large transactions flagged for review
-- Monthly trends & spikes
-- Department/category breakdown with deviation from expected benchmarks
+
 
 
 
