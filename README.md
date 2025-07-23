@@ -55,76 +55,7 @@ This project analyzes expense transactions from a small company to identify pote
 ---
 
 ## 📂 Repository Structure
-# 💼 Sales Department – Office Supplies Expense Analysis
 
-This project analyzes expense transactions from a small company to identify potential red flags, imbalances, and opportunities for oversight improvement — focusing specifically on the **Sales department's Office Supplies spending**. The goal was to surface actionable insights using real-world data analysis techniques and custom benchmarks.
-
----
-
-## 🔍 Project Summary
-
-- **Department Focus**: Sales  
-- **Category Analyzed**: Office Supplies  
-- **Dataset**: Internal transactions with columns like `date`, `employee`, `vendor`, `amount`, `category`, `department`  
-- **Tools Used**: Python, Pandas, DuckDB, Seaborn, Matplotlib, Z-score analysis, Custom benchmarking
-
----
-
-## 📈 Key Insights
-
-- **⚠️ Single Outlier Transaction**:  
-  One purchase in May 2025 ($972.45 at Staples) accounted for **over 40%** of the Sales department’s annual spend in this category — standing more than **2.2 standard deviations above** the norm.
-
-- **👤 Employee-Level Imbalance**:  
-  David Kim alone accounted for over **40% of total spend** — a potential sign of informal role specialization or policy drift. Frank Wu, by contrast, spent **over 1 SD below** the team average.
-
-- **🏪 Vendor Concentration**:  
-  Staples received 60% of total spend and was flagged as a **vendor-level outlier** (z > 1.5). This concentration may reflect a preferred supplier or warrant a pricing/policy review.
-
-- **📅 Timing Irregularities**:  
-  Transactions occurred on a **Saturday** and **two holidays**, which may require review for proper policy adherence.
-
-- **📊 Benchmark Deviation**:  
-  Sales had the **largest deviation (+28.3)** from expected Office Supplies spending compared to all other departments and categories — based on a custom benchmark system.
-
----
-
-## 📂 Repository Structure
-# 💼 Sales Department – Office Supplies Expense Analysis
-
-This project analyzes expense transactions from a small company to identify potential red flags, imbalances, and opportunities for oversight improvement — focusing specifically on the **Sales department's Office Supplies spending**. The goal was to surface actionable insights using real-world data analysis techniques and custom benchmarks.
-
----
-
-## 🔍 Project Summary
-
-- **Department Focus**: Sales  
-- **Category Analyzed**: Office Supplies  
-- **Dataset**: Internal transactions with columns like `date`, `employee`, `vendor`, `amount`, `category`, `department`  
-- **Tools Used**: Python, Pandas, DuckDB, Seaborn, Matplotlib, Z-score analysis, Custom benchmarking
-
----
-
-## 📈 Key Insights
-
-- **⚠️ Single Outlier Transaction**:  
-  One purchase in May 2025 ($972.45 at Staples) accounted for **over 40%** of the Sales department’s annual spend in this category — standing more than **2.2 standard deviations above** the norm.
-
-- **👤 Employee-Level Imbalance**:  
-  David Kim alone accounted for over **40% of total spend** — a potential sign of informal role specialization or policy drift. Frank Wu, by contrast, spent **over 1 SD below** the team average.
-
-- **🏪 Vendor Concentration**:  
-  Staples received 60% of total spend and was flagged as a **vendor-level outlier** (z > 1.5). This concentration may reflect a preferred supplier or warrant a pricing/policy review.
-
-- **📅 Timing Irregularities**:  
-  Transactions occurred on a **Saturday** and **two holidays**, which may require review for proper policy adherence.
-
-- **📊 Benchmark Deviation**:  
-  Sales had the **largest deviation (+28.3)** from expected Office Supplies spending compared to all other departments and categories — based on a custom benchmark system.
-
----
-
-## 📂 Repository Structure
 project-folder/
 │
 ├── scripts/
@@ -178,7 +109,19 @@ Due to time constraints, I focused instead on building a strong, polished deep d
 **Bryan H.**  
 Aspiring Data Analyst focused on business intelligence, expense optimization, and operational insight.
 
+
+
+
   
+
+
+
+
+
+
+
+
+
 
 
 
