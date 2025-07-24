@@ -1,36 +1,38 @@
-# =====================================================
+# ============================================================
 # 📊 Sales Department – Office Supplies Analysis Script
-# =====================================================
+# ============================================================
+# This script analyzes Office Supplies spending within the Sales department
+# of a small company. It highlights employee- and vendor-level outliers,
+# monthly trends, policy flag checks (e.g., weekends, holidays),
+# and visual insights to identify unusual patterns or misalignments.
 
-# STEP 1: Install DuckDB (if running in Colab)
-# !pip install duckdb --quiet  # Uncomment if needed
-
-# STEP 2: Imports
+# ---------------------------
+# 1️⃣ Imports
+# ---------------------------
 import pandas as pd
 import duckdb
 import matplotlib.pyplot as plt
 import seaborn as sns
 from scipy.stats import zscore
 
-# -------------------------
-# STEP 3: Load & Prepare Data
-# -------------------------
-df = pd.read_csv('SmallCompany.csv')
+# ---------------------------
+# 2️⃣ Load and Prepare Data
+# ---------------------------
+df = pd.read_csv('data/SmallCompany.csv')
 df['date'] = pd.to_datetime(df['date'], errors='coerce')
 df['day_of_week'] = df['date'].dt.dayofweek
 df['day_type'] = df['day_of_week'].apply(lambda x: 'Weekend' if x >= 5 else 'Weekday')
 df['month'] = df['date'].dt.to_period('M').astype(str)
 
-# Define U.S. federal holidays (edit as needed)
 us_holidays = pd.to_datetime([
     "2024-07-04", "2024-09-02", "2024-11-28", "2024-12-25",
     "2025-01-01", "2025-01-20", "2025-02-17", "2025-05-26", "2025-07-04"
 ])
 df['is_holiday'] = df['date'].isin(us_holidays)
 
-# -------------------------
-# STEP 4: Sales - Office Supplies Subset
-# -------------------------
+# ---------------------------
+# 3️⃣ Subset: Sales – Office Supplies
+# ---------------------------
 con = duckdb.connect()
 con.register("sales_data", df)
 
@@ -39,14 +41,14 @@ sales_os = con.execute("""
     WHERE department = 'Sales' AND category = 'Office Supplies'
 """).df()
 
-# -------------------------
-# STEP 5: Employee-Level Spend & Z-Scores
-# -------------------------
+# ---------------------------
+# 4️⃣ Employee Spend Analysis
+# ---------------------------
 emp_total = sales_os.groupby('employee')['amount'].sum()
 emp_z = zscore(emp_total)
 emp_outliers = emp_total[abs(emp_z) > 1.0]
 
-print("👤 Sales Office Supplies Spend by Employee:")
+print("👤 Employee Spend:")
 print(emp_total.sort_values(ascending=False))
 if not emp_outliers.empty:
     print("\n🚩 Employee Outliers (z > 1.0):")
@@ -54,14 +56,14 @@ if not emp_outliers.empty:
         print(f"{name}: ${amt:.2f}")
 print("\n" + "="*50 + "\n")
 
-# -------------------------
-# STEP 6: Vendor-Level Spend & Z-Scores
-# -------------------------
+# ---------------------------
+# 5️⃣ Vendor Spend Analysis
+# ---------------------------
 vendor_total = sales_os.groupby('vendor')['amount'].sum()
 vendor_z = zscore(vendor_total)
 vendor_outliers = vendor_total[abs(vendor_z) > 1.5]
 
-print("🏪 Sales Office Supplies Spend by Vendor:")
+print("🏪 Vendor Spend:")
 print(vendor_total.sort_values(ascending=False))
 if not vendor_outliers.empty:
     print("\n🚩 Vendor Outliers (z > 1.5):")
@@ -69,11 +71,11 @@ if not vendor_outliers.empty:
         print(f"{name}: ${amt:.2f}")
 print("\n" + "="*50 + "\n")
 
-# -------------------------
-# STEP 7: Monthly Spend Trend
-# -------------------------
+# ---------------------------
+# 6️⃣ Monthly Spend Trend
+# ---------------------------
 monthly_trend = sales_os.groupby('month')['amount'].sum()
-print("📅 Monthly Spend (Sales Office Supplies):")
+print("📅 Monthly Spend:")
 print(monthly_trend)
 
 monthly_trend.plot(kind='line', marker='o', figsize=(10, 4))
@@ -84,39 +86,38 @@ plt.grid(axis='y', linestyle='--', alpha=0.4)
 plt.tight_layout()
 plt.show()
 
-# -------------------------
-# STEP 8: Transaction-Level Outliers
-# -------------------------
+# ---------------------------
+# 7️⃣ Transaction-Level Outliers
+# ---------------------------
 sales_os['z_score'] = zscore(sales_os['amount'])
 txn_outliers = sales_os[sales_os['z_score'].abs() > 1.5]
 
-print("🚨 Transaction-Level Outliers (z > 1.5):")
+print("🚨 Transaction-Level Outliers:")
 print(txn_outliers[['date', 'employee', 'vendor', 'amount', 'z_score']])
 print("\n" + "="*50 + "\n")
 
-# -------------------------
-# STEP 9: Weekend vs. Weekday Breakdown
-# -------------------------
-split = sales_os.groupby('day_type')['amount'].sum()
-
+# ---------------------------
+# 8️⃣ Weekend / Holiday Checks
+# ---------------------------
 weekend_txns = sales_os[sales_os['day_type'] == 'Weekend']
+holiday_txns = sales_os[sales_os['is_holiday']]
+
 if not weekend_txns.empty:
-    print("\n🗓️ Weekend Transactions:")
+    print("🗓️ Weekend Transactions:")
     print(weekend_txns[['date', 'employee', 'vendor', 'amount']].sort_values('date'))
 else:
-    print("\n✅ No weekend transactions.")
+    print("✅ No weekend transactions.")
+
+if not holiday_txns.empty:
+    print("\n🎉 Holiday Transactions:")
+    print(holiday_txns[['date', 'employee', 'vendor', 'amount']].sort_values('date'))
+else:
+    print("✅ No holiday transactions.")
 print("\n" + "="*50 + "\n")
 
-# -------------------------
-# STEP 10: View Holiday Transactions
-# -------------------------
-holiday_txns = df[(df['is_holiday']) & (df['category'] == 'Office Supplies')]
-print("🎉 Transactions on Holidays:")
-print(holiday_txns if not holiday_txns.empty else "✅ No holiday transactions.")
-
-# -------------------------
-# STEP 11: Percent of Spend by Employee Bar Chart
-# -------------------------
+# ---------------------------
+# 9️⃣ Bar Chart: % Spend by Employee
+# ---------------------------
 emp_summary = sales_os.groupby('employee')['amount'].sum().reset_index()
 emp_summary['percent_of_total'] = emp_summary['amount'] / emp_summary['amount'].sum() * 100
 expected_share = 100 / emp_summary.shape[0]
@@ -138,9 +139,9 @@ plt.grid(axis='y', linestyle='--', alpha=0.5)
 plt.tight_layout()
 plt.show()
 
-# -------------------------
-# STEP 12: Vendor Pie Chart
-# -------------------------
+# ---------------------------
+# 🔟 Pie Chart: Vendor Breakdown
+# ---------------------------
 vendor_data = sales_os.groupby('vendor')['amount'].sum().reset_index()
 
 plt.figure(figsize=(6, 6))
@@ -152,9 +153,9 @@ plt.title('Sales – Office Supplies Vendor Breakdown')
 plt.tight_layout()
 plt.show()
 
-# -------------------------
-# STEP 13: Highlight Z-Score Transaction Outlier
-# -------------------------
+# ---------------------------
+# 1️⃣1️⃣ Transaction Strip Plot (Z-Scores)
+# ---------------------------
 tx_data = sales_os[['employee', 'amount']].copy()
 mean_amt = tx_data['amount'].mean()
 std_amt = tx_data['amount'].std()
@@ -165,7 +166,6 @@ sns.stripplot(data=tx_data, x='employee', y='amount',
               hue='highlight', palette={'David Kim': 'red', 'Other': 'gray'},
               size=12, jitter=False, alpha=0.8, zorder=3)
 
-# SD reference lines
 for i in range(3):
     y_val = mean_amt + i * std_amt
     plt.axhline(y_val, color='blue', linestyle='--', linewidth=1.2)
