@@ -1,5 +1,5 @@
 # ============================================================
-# 📊 Sales Department – Office Supplies Analysis Script
+# 📊 sales_office_supplies.py
 # ============================================================
 # This script analyzes Office Supplies spending within the Sales department
 # of a small company. It highlights employee- and vendor-level outliers,
