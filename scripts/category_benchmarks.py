@@ -138,13 +138,3 @@ if __name__ == "__main__":
     # 7️⃣ Heatmap of Deviation from Expected Benchmark
     # -----------------------------
     generate_benchmark_heatmap(pivot_expected, "charts/benchmark_heatmap.png")
-
-    # -----------------------------
-    # 🧾 Print Tier Midpoints
-    # -----------------------------
-    print("📏 Tier Midpoints (for reference):")
-    print(f"  Low:          {low_mid:.2f}")
-    print(f"  Medium–Low:   {med_low_mid:.2f}")
-    print(f"  Medium:       {med_mid:.2f}")
-    print(f"  Medium–High:  {med_high_mid:.2f}")
-    print(f"  High:         {high_mid:.2f}")
