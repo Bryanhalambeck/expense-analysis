@@ -1,11 +1,6 @@
 # ============================================
 # 📊 category_benchmarks.py
 # --------------------------------------------
-# Calculates how each department's category-level spending
-# compares to expected benchmark tiers using custom-defined
-# midpoints and visualizes the deviation in a heatmap.
-# ============================================
-
 """
 This script analyzes departmental spending by category,
 calculates deviation from benchmark expectations using 
