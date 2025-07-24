@@ -6,6 +6,13 @@
 # monthly trends, policy flag checks (e.g., weekends, holidays),
 # and visual insights to identify unusual patterns or misalignments.
 
+"""
+This script analyzes Office Supplies spending within the Sales department
+of a small company. It highlights employee- and vendor-level outliers,
+monthly trends, policy flag checks (e.g., weekends, holidays),
+and visual insights to identify unusual patterns or misalignments.
+"""
+
 # ---------------------------
 # 1️⃣ Imports
 # ---------------------------
