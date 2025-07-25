@@ -26,6 +26,78 @@ This project analyzes expense transactions from a small company to identify pote
 
 ---
 
+# 📊 Category-Level Benchmarking (All Departments)
+
+This section evaluates how each department’s spending behavior aligns with expectations across categories like Travel, Meals, and Office Supplies.
+
+Using a custom benchmarking system, we:
+- Calculate what % of each department's budget went to each category
+- Compare that to what’s typical across departments
+- Define “expected” spending tiers (low, medium, high) for each category
+- Visualize how far off each department is from those expectations using a color-coded heatmap
+
+This approach flags misalignments and potential budget issues that wouldn’t show up in raw totals alone.
+
+---
+
+## 📊 Benchmarking Logic Explained
+
+To help identify which department-category pairs might warrant deeper investigation, I built a custom benchmarking system. This system scores each department based on how closely its spending aligns with expectations.
+
+Here’s how it works:
+
+### ✅ Step-by-Step Logic
+
+1. **% of Department Spend by Category**  
+   For each department, I calculated the percentage of their total budget spent in each category (Meals, Travel, etc.):
+
+   $begin:math:display$
+   \\text{Percent} = \\left( \\frac{\\text{Category Spend}}{\\text{Total Dept Spend}} \\right) \\times 100
+   $end:math:display$
+
+   This gives a normalized view of each department’s spending priorities.
+
+2. **Deviation from Category Average**  
+   I then subtracted the company-wide average for each category:
+
+   $begin:math:display$
+   \\text{Deviation} = \\text{This Dept’s %} - \\text{Category Average %}
+   $end:math:display$
+
+   This tells us how unusually high or low a department is spending in each area.
+
+3. **Tier Midpoints from Percentiles**  
+   I split all deviation values into percentile-based tiers:
+   - Bottom 33% → **Low**
+   - Middle 33% → **Medium**
+   - Top 33% → **High**
+
+   I also calculated “in-between” tier midpoints:
+   - Medium–Low = avg of Low and Medium
+   - Medium–High = avg of Medium and High
+
+   These midpoints serve as numeric benchmarks for expected spending behavior.
+
+4. **Manual Tier Expectations**  
+   I manually defined what tier each department *should* be in for each category, based on company policy, logic, or business needs.  
+   (e.g., Sales is expected to spend “Low” on Office Supplies, “High” on Travel.)
+
+5. **Deviation from Expected Benchmark**  
+   I then compared each department’s actual deviation to its expected tier midpoint:
+
+   $begin:math:display$
+   \\text{Final Score} = \\text{Actual Deviation} - \\text{Expected Tier Midpoint}
+   $end:math:display$
+
+   This final score reflects how far each department is from where we think they *should* be — helping us flag meaningful misalignments.
+
+### 🎯 Why It Matters
+
+This approach doesn’t just highlight high or low spenders — it shows where departments are behaving *differently than expected*, based on policy and context.  
+The result is a heatmap that directs attention to areas of potential concern, waste, or policy drift — helping prioritize where to investigate next.
+
+---
+
 ## 🔍 Project Summary
 
 - **Department Focus**: Sales  
