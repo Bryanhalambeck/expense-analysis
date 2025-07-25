@@ -81,16 +81,19 @@ Here’s how it works:
 5. **Deviation from Expected Benchmark**  
    I then compared each department’s actual deviation to its expected tier midpoint:
 
-   $begin:math:display$
-   \\text{Final Score} = \\text{Actual Deviation} - \\text{Expected Tier Midpoint}
-   $end:math:display$
+   Final Score = Actual Deviation – Expected Tier Midpoint
 
    This final score reflects how far each department is from where we think they *should* be — helping us flag meaningful misalignments.
 
 ### 🎯 Why It Matters
 
-This approach doesn’t just highlight high or low spenders — it shows where departments are behaving *differently than expected*, based on policy and context.  
-The result is a heatmap that directs attention to areas of potential concern, waste, or policy drift — helping prioritize where to investigate next.
+This approach doesn’t just highlight high or low spenders — it shows where departments are behaving differently than expected, based on policy and context.
+
+The resulting heatmap serves two key purposes:
+	•	✅ Targeted Diagnosis: It flags potential problem areas — like overspending or policy misalignment — helping the finance team know exactly where to dig in.
+	•	📊 Executive Overview: It gives leadership a clean, visual snapshot of how each department stacks up across all categories — making it easier to spot outliers, patterns, or blind spots at a glance.
+
+Whether you’re looking for a specific red flag or zooming out for strategic decision-making, this benchmarking system helps translate raw numbers into actionable insights.
 
 ---
 
@@ -126,6 +129,7 @@ We repeat the same logic for vendors.
 Spending is grouped by month to visualize spikes or trends over time — helping identify seasonality or sudden jumps.
     5.    Transaction-Level Outliers
 We calculate a z-score for each individual transaction, flagging any with z > 1.5 as potentially anomalous.
+  Note: Different z-score thresholds (e.g., 1.0 vs 1.5) are used based on the expected variation   in each area — helping surface meaningful outliers without over-flagging normal behavior.
     6.    Policy Checks (Weekends + Holidays)
 Purchases on weekends or U.S. holidays are flagged, since these may violate company timing policies or require extra scrutiny.
     7.    Employee % Share Bar Chart
