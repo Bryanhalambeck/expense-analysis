@@ -175,8 +175,6 @@ for i in range(3):
     plt.text(len(tx_data['employee'].unique()), y_val + 5, label,
              color='blue', fontsize=10, va='bottom')
 
-plt.text(6.1, 972.45 + 25, s="David Kim\n$972.45", color='red', fontsize=10, ha='center')
-
 plt.title("Sales – Office Supplies Transaction Z-Score Outlier")
 plt.ylabel("Transaction Amount ($)")
 plt.xlabel("Employee")
