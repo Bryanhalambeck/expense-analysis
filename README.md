@@ -33,7 +33,7 @@ This section evaluates how each department’s spending behavior aligns with exp
 Using a custom benchmarking system, we:
 - Calculate what % of each department's budget went to each category
 - Compare that to what’s typical across departments
-- Define “expected” spending tiers (low, medium, high) for each category
+- Define “expected” spending tiers (low, medium-low, medium, medium-high, high) for each category
 - Visualize how far off each department is from those expectations using a color-coded heatmap
 
 This approach flags misalignments and potential budget issues that wouldn’t show up in raw totals alone.
