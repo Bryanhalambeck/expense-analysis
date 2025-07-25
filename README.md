@@ -113,10 +113,43 @@ This approach helps surface potential fairness issues, policy concerns, or unusu
 
 ---
 
+🧾 Office Supplies Logic Explained
 
+This analysis takes a focused look at Office Supplies spending within the Sales department, using z-score thresholds and visual breakdowns to identify potential red flags — whether it’s an overactive employee, a concentrated vendor, or an oddly timed purchase.
 
+✅ Step-by-Step Logic
+    1.    Targeted Subset
+We isolate just the Sales department’s Office Supplies transactions, zeroing in on one department-category combo for focused analysis.
+    2.    Employee-Level Analysis
+We sum each employee’s total Office Supplies spend, then apply a z-score to flag outliers.
+    •    Employees with z > 1.0 are highlighted as potentially overspending compared to peers.
+    3.    Vendor-Level Analysis
+We repeat the same logic for vendors.
+    •    Vendors with z > 1.5 are flagged to check for overreliance or unusual billing.
+    4.    Monthly Spend Trends
+Spending is grouped by month to visualize spikes or trends over time — helping identify seasonality or sudden jumps.
+    5.    Transaction-Level Outliers
+We calculate a z-score for each individual transaction, flagging any with z > 1.5 as potentially anomalous.
+    6.    Policy Checks (Weekends + Holidays)
+Purchases on weekends or U.S. holidays are flagged, since these may violate company timing policies or require extra scrutiny.
+    7.    Employee % Share Bar Chart
+A horizontal bar chart shows how much each employee contributed to total spend, compared to an even split.
+    •    Bars that deviate by ±10% from the expected average are visually flagged in orange.
+    8.    Vendor Breakdown Pie Chart
+A simple pie chart shows vendor share of total Office Supplies purchases — highlighting whether spend is spread or concentrated.
+    9.    Transaction Strip Plot
+A final strip plot charts all transactions by employee, highlighting any that stand far above the norm — especially if it’s the same person repeatedly.
 
+🎯 Why It Matters
 
+By zooming in on one category and department, this analysis helps the finance team:
+    •    Catch unusual spending behavior early
+    •    Detect vendor dependence or policy violations
+    •    Spot trends or exceptions that get buried in raw totals
+
+This department-level deep dive supports smarter audits, tighter controls, and cleaner budgets.
+
+---
 
 ## 🔍 Project Summary
 
