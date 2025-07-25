@@ -21,7 +21,7 @@ from scipy.stats import zscore
 # 2️⃣ Load and Prepare Data
 # ---------------------------
 df = pd.read_csv('data/SmallCompany.csv')
-df['date'] = pd.to_datetime(df['date'], format="%m/%d/%Y", errors='coerce')
+df['date'] = pd.to_datetime(df['date'], format="%m/%d/%y", errors='coerce')
 df['day_of_week'] = df['date'].dt.dayofweek
 df['day_type'] = df['day_of_week'].apply(lambda x: 'Weekend' if x >= 5 else 'Weekday')
 df['month'] = df['date'].dt.to_period('M').astype(str)
