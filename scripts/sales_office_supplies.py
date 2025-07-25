@@ -128,19 +128,21 @@ print("\n" + "="*50 + "\n")
 # ---------------------------
 # 9️⃣ Bar Chart: % Spend by Employee
 # ---------------------------
+from scipy.stats import zscore
+
 emp_summary = sales_os.groupby('employee')['amount'].sum().reset_index()
 emp_summary['percent_of_total'] = emp_summary['amount'] / emp_summary['amount'].sum() * 100
-expected_share = 100 / emp_summary.shape[0]
-emp_summary = emp_summary.sort_values('amount', ascending=False)
+emp_summary['z_score'] = zscore(emp_summary['percent_of_total'])
+emp_summary = emp_summary.sort_values('percent_of_total', ascending=False)
 
 plt.figure(figsize=(10, 6))
 bars = plt.bar(emp_summary['employee'], emp_summary['percent_of_total'], color='skyblue')
-plt.axhline(expected_share, color='red', linestyle='--', label=f'Expected Share (~{expected_share:.1f}%)')
 
-for bar, pct in zip(bars, emp_summary['percent_of_total']):
-    if pct > expected_share + 10 or pct < expected_share - 10:
+for bar, z in zip(bars, emp_summary['z_score']):
+    if abs(z) > 1.0:  # Use z > 1.0 for flagging
         bar.set_color('orange')
 
+plt.axhline(100 / emp_summary.shape[0], color='red', linestyle='--', label='Expected Share')
 plt.title('Sales – Office Supplies Spend by Employee')
 plt.ylabel('Percent of Total Spend')
 plt.xticks(rotation=45)
