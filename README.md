@@ -98,6 +98,26 @@ The result is a heatmap that directs attention to areas of potential concern, wa
 
 ---
 
+🧾 Sales Department – Office Supplies Deep Dive
+
+This section focuses on how the Sales department spends on Office Supplies, breaking down patterns by employee, vendor, and time.
+
+Using a custom analysis workflow, we:
+	•	Identify employees or vendors with unusually high spending using z-score thresholds
+	•	Track monthly spending trends to spot seasonal spikes or irregular activity
+	•	Flag any purchases made on weekends or U.S. holidays
+	•	Visualize spending concentration by employee and vendor
+	•	Highlight transaction-level outliers to uncover red flags
+
+This approach helps surface potential fairness issues, policy concerns, or unusual patterns that wouldn’t be obvious from totals alone.
+
+---
+
+
+
+
+
+
 ## 🔍 Project Summary
 
 - **Department Focus**: Sales  
