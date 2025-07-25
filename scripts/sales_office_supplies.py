@@ -78,7 +78,7 @@ print("\n" + "="*50 + "\n")
 # ---------------------------
 monthly_trend = sales_os.groupby('month')['amount'].sum()
 print("📅 Monthly Spend:")
-print(monthly_trend)
+print(monthly_trend.reset_index(name='Monthly Spend ($)'))
 
 monthly_trend.plot(kind='line', marker='o', figsize=(10, 4))
 plt.title('Sales – Office Supplies Monthly Spend')
