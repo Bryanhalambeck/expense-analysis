@@ -28,7 +28,7 @@ This project analyzes expense transactions from a small company to identify pote
 
 # 📊 Category-Level Benchmarking (All Departments)
 
-This section evaluates how each department’s spending behavior aligns with expectations across categories like Travel, Meals, and Office Supplies.
+This section evaluates how each department’s spending behavior aligns with expectations across categories like Travel, Meals, Office Supplies, Training and Travel.
 
 Using a custom benchmarking system, we:
 - Calculate what % of each department's budget went to each category
@@ -51,18 +51,14 @@ Here’s how it works:
 1. **% of Department Spend by Category**  
    For each department, I calculated the percentage of their total budget spent in each category (Meals, Travel, etc.):
 
-   $begin:math:display$
-   \\text{Percent} = \\left( \\frac{\\text{Category Spend}}{\\text{Total Dept Spend}} \\right) \\times 100
-   $end:math:display$
+   Percent = (Category Spend / Total Dept Spend) × 100
 
    This gives a normalized view of each department’s spending priorities.
 
 2. **Deviation from Category Average**  
    I then subtracted the company-wide average for each category:
 
-   $begin:math:display$
-   \\text{Deviation} = \\text{This Dept’s %} - \\text{Category Average %}
-   $end:math:display$
+   Deviation = (This Dept’s % Spend) – (Category Average % Spend)
 
    This tells us how unusually high or low a department is spending in each area.
 
@@ -79,7 +75,7 @@ Here’s how it works:
    These midpoints serve as numeric benchmarks for expected spending behavior.
 
 4. **Manual Tier Expectations**  
-   I manually defined what tier each department *should* be in for each category, based on company policy, logic, or business needs.  
+   I manually defined what tier each department should be in for each category, based on the business context, and general expectations for how resources are typically allocated in a small, shared-spending team. 
    (e.g., Sales is expected to spend “Low” on Office Supplies, “High” on Travel.)
 
 5. **Deviation from Expected Benchmark**  
