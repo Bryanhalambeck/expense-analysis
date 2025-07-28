@@ -134,7 +134,7 @@ We calculate a z-score for each individual transaction, flagging any with z > 1.
 Purchases on weekends or U.S. holidays are flagged, since these may violate company timing policies or require extra scrutiny.
     7.    Employee % Share Bar Chart
 A horizontal bar chart shows how much each employee contributed to total spend, compared to an even split.
-    •    Bars that deviate by ±10% from the expected average are visually flagged in orange.
+  •  Bars with a z-score greater than 1.0 are visually flagged in orange to highlight potential outliers.
     8.    Vendor Breakdown Pie Chart
 A simple pie chart shows vendor share of total Office Supplies purchases — highlighting whether spend is spread or concentrated.
     9.    Transaction Strip Plot
