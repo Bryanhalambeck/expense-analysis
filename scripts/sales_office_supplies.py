@@ -102,7 +102,7 @@ plt.show()
 sales_os['z_score'] = zscore(sales_os['amount'])
 txn_outliers = sales_os[sales_os['z_score'].abs() > 1.5]
 
-print("🚨 Transaction-Level Outliers:")
+print("🚨 Transaction-Level Outliers (z > 1.5):")
 print(txn_outliers[['date', 'employee', 'vendor', 'amount', 'z_score']])
 print("\n" + "="*50 + "\n")
 
@@ -128,8 +128,6 @@ print("\n" + "="*50 + "\n")
 # ---------------------------
 # 9️⃣ Bar Chart: % Spend by Employee
 # ---------------------------
-from scipy.stats import zscore
-
 emp_summary = sales_os.groupby('employee')['amount'].sum().reset_index()
 emp_summary['percent_of_total'] = emp_summary['amount'] / emp_summary['amount'].sum() * 100
 emp_summary['z_score'] = zscore(emp_summary['percent_of_total'])
