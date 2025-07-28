@@ -99,13 +99,13 @@ Whether you’re looking for a specific red flag or zooming out for strategic de
 
 🧾 Sales Department – Office Supplies Deep Dive
 
-This section focuses on how the Sales department spends on Office Supplies, breaking down patterns by employee, vendor, and time.
+This section focuses on how the Sales department spends on Office Supplies, breaking down patterns by employee, vendor, individual transactions and time.
 
 Using a custom analysis workflow, we:
 	•	Identify employees or vendors with unusually high spending using z-score thresholds
 	•	Track monthly spending trends to spot seasonal spikes or irregular activity
 	•	Flag any purchases made on weekends or U.S. holidays
-	•	Visualize spending concentration by employee and vendor
+	•	Visualize spending concentration by employee, individual transaction and vendor
 	•	Highlight transaction-level outliers to uncover red flags
 
 This approach helps surface potential fairness issues, policy concerns, or unusual patterns that wouldn’t be obvious from totals alone.
@@ -114,7 +114,7 @@ This approach helps surface potential fairness issues, policy concerns, or unusu
 
 🧾 Office Supplies Logic Explained
 
-This analysis takes a focused look at Office Supplies spending within the Sales department, using z-score thresholds and visual breakdowns to identify potential red flags — whether it’s an overactive employee, a concentrated vendor, or an oddly timed purchase.
+This analysis takes a focused look at Office Supplies spending within the Sales department, using z-score thresholds and visual breakdowns to identify potential red flags — whether it’s an overactive employee, a concentrated vendor, an oddly timed purchase, or a standout one-off transaction.
 
 ✅ Step-by-Step Logic
     1.    Targeted Subset
