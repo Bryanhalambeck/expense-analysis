@@ -4,7 +4,7 @@
 """
 This script dives into Office Supplies spending within the Sales department
 of a small company. It helps flag potential issues like outlier employees,
-overused vendors, unusual timing, or policy violations.
+overused vendors, outlier transactions, or unusual timing.
 
 📘 How it works:
 - We zoom in on all Office Supplies expenses tied to the Sales team.
@@ -12,8 +12,8 @@ overused vendors, unusual timing, or policy violations.
 - We break down monthly trends and spot transactions on weekends/holidays.
 - We visualize spending splits with bar charts, pie charts, and strip plots.
 
-The goal is to surface potential overspend, fairness issues, or policy flags — 
-and offer a visual, transparent look at how this category is being used.
+The goal is to surface potential overspend or fairness issues — 
+and offer visuals, transparent look at how this category is being used.
 """
 
 # ---------------------------
