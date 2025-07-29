@@ -12,8 +12,8 @@ overused vendors, outlier transactions, or unusual timing.
 - We break down monthly trends and spot transactions on weekends/holidays.
 - We visualize spending splits with bar charts, pie charts, and strip plots.
 
-The goal is to surface potential overspend or fairness issues — 
-and offer visuals, transparent look at how this category is being used.
+The goal is to surface potential overspending or fairness issues —
+and give a clear, visual window into how this category is being used.
 """
 
 # ---------------------------
