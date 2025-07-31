@@ -1,10 +1,6 @@
 # ============================================================
 # 📊 same_day_vendor.py
 # ------------------------------------------------------------
-# Flags cases where the same employee made multiple transactions
-# with the same vendor on the same day — a pattern that may
-# indicate bundling opportunities or spending inefficiencies.
-# ============================================================
 
 import duckdb
 
