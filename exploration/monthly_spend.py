@@ -1,12 +1,6 @@
 # ============================================================
 # 📊 monthly_spend.py
 # ------------------------------------------------------------
-# Analyzes and visualizes monthly company-wide expense totals
-# across all departments and categories.
-# ============================================================
-
-# Optional: Install DuckDB if running in Colab or local
-# !pip install duckdb --quiet
 
 import duckdb
 import pandas as pd
