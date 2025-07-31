@@ -1,9 +1,6 @@
 # =====================================================
 # 📊 sales_check.py
 # -----------------------------------------------------
-# Analyzes Travel and Meals spending in the Sales dept,
-# detecting outliers by employee, vendor, and weekend use.
-# =====================================================
 
 import pandas as pd
 import duckdb
