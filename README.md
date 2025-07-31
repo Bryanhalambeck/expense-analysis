@@ -20,6 +20,26 @@ Your goal is to turn this data into clear, actionable insights that help the tea
 
 ---
 
+📁 Data Source – SmallCompany.csv
+
+This file contains 100 rows of fictional expense data from the small, specialized tech and professional services firm. Each row represents an individual transaction made by one of six core employees across various departments and categories.
+
+🔍 Columns:
+	•	id – Unique transaction ID
+	•	date – Purchase date (MM/DD/YY format)
+	•	department – Department responsible for the spend (e.g., Sales, IT, Marketing)
+	•	vendor – The company or service where the expense occurred
+	•	employee – The individual who made the purchase
+	•	category – Type of expense (e.g., Travel, Software, Office Supplies)
+	•	amount – Transaction amount in USD
+
+🧾 Purpose:
+
+This file serves as the raw input for all analysis in this project. It was designed to mimic realistic company spending behavior, including:
+	•	Overlapping responsibilities across employees and departments
+	•	Diverse vendor usage
+	•	A variety of expense types
+	
 # 💼 Sales Department – Office Supplies Expense Analysis
 
 This project analyzes expense transactions from a small company to identify potential red flags, imbalances, and opportunities for oversight improvement — focusing specifically on the **Sales department's Office Supplies spending**. The goal was to surface actionable insights using real-world data analysis techniques and custom benchmarks.
