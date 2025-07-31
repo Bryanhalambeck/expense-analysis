@@ -1,9 +1,6 @@
 # =====================================================
 # 📊 policy_checks.py
 # -----------------------------------------------------
-# Flags any expense transactions that violate company
-# spending policy rules based on category-specific limits.
-# =====================================================
 
 import pandas as pd
 
