@@ -171,6 +171,23 @@ This department-level deep dive supports smarter audits, tighter controls, and c
 
 ---
 
+## 📊 Final Visuals and Insights
+
+### 📊 Sales – Office Supplies Spend by Employee
+
+![Sales Employee Share Z-Score](charts/.png)  
+📎 David Kim accounts for over 40% of total Office Supplies spend — flagged via z-score as a potential outlier, well above the expected average of ~16.7%.
+
+This bar chart compares each employee’s share of total Office Supplies spending within the Sales department.
+The red dashed line represents the expected even share if spending were split equally among all employees.
+	•	Blue bars indicate within-normal-range spending.
+	•	Orange bars mark employees whose spending was flagged as an outlier (z-score > 1.0 or < -1.0).
+
+This view helps surface fairness issues and possible budget misuse that wouldn’t be clear from totals alone.
+
+
+---
+
 ## 🔍 Project Summary
 
 - **Department Focus**: Sales  
