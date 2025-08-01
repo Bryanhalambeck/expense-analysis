@@ -1,6 +1,6 @@
 # expense-analysis
 
-## 🏢 Example Company Description
+## Example Company Description
 
 The company is a small, specialized tech and professional services firm run by a lean team of six core employees. This tight-knit group handles custom software development, IT support, marketing campaigns, sales operations, and HR tasks for a range of clients across industries.
 
@@ -40,10 +40,6 @@ This file serves as the raw input for all analysis in this project. It was desig
 	•	Diverse vendor usage
 	•	A variety of expense types
 	
-# 💼 Sales Department – Office Supplies Expense Analysis
-
-This project analyzes expense transactions from a small company to identify potential red flags, imbalances, and opportunities for oversight improvement — focusing specifically on the **Sales department's Office Supplies spending**. The goal was to surface actionable insights using real-world data analysis techniques and custom benchmarks.
-
 ---
 
 # 📊 Category-Level Benchmarking (All Departments)
