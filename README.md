@@ -287,10 +287,11 @@ project-folder/
 
 Originally, I planned to extend this analysis to cover:
 
-- **Full Company Policy Check** (all departments/categories)
-- **Same-Day Vendor Flagging**
-- **Full Vendor Benchmarking**
-- **Departmental Timing Patterns**
+- **Full Company Policy Check** (flag overspending by category across all departments)
+- **Same-Day Vendor Flagging** (detect duplicate or batched transactions from same employee/vendor)
+- **Full Vendor Benchmarking** (identify overreliance, statistical outliers, and single-use vendors)
+- **Departmental Timing Patterns** (analyze spending behavior by day, category gaps, and weekend use)
+- **Monthly Spend Trends** (visualize company-wide spending patterns over time to spot seasonal surges)
 
 Due to time constraints, I focused instead on building a strong, polished deep dive into the Sales department — but I included my broader plan here to show my workflow and thought process.
 
