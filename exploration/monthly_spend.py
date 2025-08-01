@@ -1,7 +1,16 @@
 # ============================================================
 # 📊 monthly_spend.py
 # ------------------------------------------------------------
+"""
+This script analyzes overall company spending trends over time by grouping expenses by month and visualizing them in a simple line chart.
 
+📘 How it works:
+	•	We load all company expense data and parse the dates.
+	•	Using DuckDB, we group transactions by month and sum up total spending.
+	•	We visualize this trend over time to spot spikes, seasonal dips, or unusual surges.
+
+This view helps identify time-based patterns in spending — like end-of-quarter surges, holiday lulls, or budgeting cycles — that may require further review or planning.
+"""
 import duckdb
 import pandas as pd
 import matplotlib.pyplot as plt
