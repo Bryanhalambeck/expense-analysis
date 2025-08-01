@@ -2,22 +2,14 @@
 # 📊 same_day_vendor.py
 # ------------------------------------------------------------
 """
-This script checks for vendor concentration risk by analyzing how much of the company’s total spend is flowing to each vendor — and flags cases that may warrant scrutiny.
+This script flags repeat transactions with the same vendor on the same day by a single employee — which can signal batching, duplicate purchases, or policy issues.
 
 📘 How it works:
-	•	We calculate total spend and number of transactions for each vendor.
-	•	Then, we compute:
-	•	Percent of total spend (to flag overly dominant vendors)
-	•	Z-score (to identify statistical outliers)
-	•	Single-use vendors (which may indicate inconsistent procurement practices)
-	•	Vendors are flagged as:
-	•	🔴 Hard High: 30%+ of total spend
-	•	⚠️ Z Outlier: Statistically unusual spending (z > 1.96)
-	•	🟡 Single-Use Vendor: Only one transaction
-	•	✅ OK: No immediate red flag
+	•	We group expenses by employee, vendor, and date.
+	•	Any combination with more than one transaction on the same day is flagged.
+	•	For each match, we show the number of transactions and total amount spent.
 
-This analysis helps detect overreliance, potential risk exposure, and opportunities for vendor consolidation.
-import duckdb
+This check helps spot possible oversights, double charges, or non-standard purchasing behavior — useful for tightening vendor and employee-level controls.
 """
 
 # ------------------------------------------------------------
