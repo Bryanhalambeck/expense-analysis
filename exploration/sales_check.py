@@ -1,6 +1,19 @@
 # =====================================================
 # 📊 sales_check.py
 # -----------------------------------------------------
+"""
+This script inspects Travel and Meals spending in the Sales department, identifying anomalies by employee, vendor, and timing.
+
+📘 How it works:
+	•	We isolate all Travel and Meals expenses tied to the Sales team.
+	•	We flag unusually high spenders using z-scores:
+	•	Travel outliers: z > 1.5
+	•	Meals outliers: z > 1.0
+	•	We check for transactions that occurred on weekends — which may signal non-standard activity.
+	•	We also verify whether expected spend categories (like Training or Software) are completely missing.
+
+This targeted review helps catch lopsided spending patterns, uncover outliers, and highlight gaps in category use — offering a practical, team-specific lens for financial oversight.
+"""
 
 import pandas as pd
 import duckdb
