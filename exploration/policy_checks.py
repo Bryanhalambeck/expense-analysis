@@ -1,7 +1,16 @@
 # =====================================================
 # 📊 policy_checks.py
 # -----------------------------------------------------
+"""
+This script flags potential violations of internal expense policies by scanning all transactions and comparing them against category-specific rules.
 
+📘 How it works:
+	•	We define a set of spending limits for categories like Meals, Travel, Training, Office Supplies, and Software.
+	•	The script checks all expenses against these rules and flags any that exceed the thresholds.
+	•	It also groups daily Travel expenses to enforce per-day limits and checks for large single-item purchases that may require approval.
+
+This tool helps enforce financial policy, promote accountability, and catch overspending early — ensuring all expenses stay aligned with company guidelines.
+"""
 import pandas as pd
 
 # -----------------------------------------------------
