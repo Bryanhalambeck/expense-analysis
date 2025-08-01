@@ -63,7 +63,7 @@ In-between midpoints:
     •    Medium–High = avg of Medium and High
     4.    Manual Tier Expectations
 Based on business context, I manually defined expected tier behavior for each department/category pair.
-(e.g., Sales is expected to spend “Low” on Office Supplies, “High” on Travel.)
+   📌 Note: Full expected tier assignments (e.g., Sales = Low on Office Supplies, High on Travel) are shown in the code for transparency. These were based on common sense assumptions for a small team with shared spending responsibilities.
     5.    Deviation from Expected Benchmark
 Final Score = Actual Deviation – Expected Tier Midpoint
 This reflects how far each department is from where they should be.
@@ -108,7 +108,7 @@ Same logic applied to vendors, flag z-scores > 1.5.
 Group spend by month to identify spikes or seasonality.
     5.    Transaction-Level Outliers
 Calculate z-score per transaction, flag z > 1.5.
-Note: Z-score thresholds vary to avoid false positives.
+   📌 Note: Z-score thresholds vary to avoid false positives.
     6.    Policy Checks (Weekends + Holidays)
 Flag purchases made outside normal business days.
     7.    Employee % Share Bar Chart
