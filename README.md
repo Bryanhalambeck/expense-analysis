@@ -1,5 +1,13 @@
 📦 Expense Analysis – Small Company Budget Review
 
+⸻
+
+📌 Executive Summary
+
+This project analyzes expense data for a small tech firm to detect fairness issues, policy violations, and unusual spending patterns. It combines company-wide benchmarking with a deep dive into the Sales department’s Office Supplies spend — surfacing red flags through z-score analysis, visual storytelling, and custom business logic. Broader scripts in the /exploration/ folder reflect a full-company view, while the finalized focus area shows how to drive actionable insights in one targeted domain.
+
+⸻
+
 👤 Example Company Description
 
 The company is a small, specialized tech and professional services firm run by a lean team of six core employees. This tight-knit group handles custom software development, IT support, marketing campaigns, sales operations, and HR tasks for a range of clients across industries.
@@ -33,6 +41,8 @@ Your goal is to turn this data into clear, actionable insights that help the tea
 ⸻
 
 📁 Data Source – SmallCompany.csv
+
+📝 Note: All expense data is fictional and designed for educational analysis only.
 
 This file contains 100 rows of fictional expense data from the small, specialized tech and professional services firm. Each row represents an individual transaction made by one of six core employees across various departments and categories.
 
