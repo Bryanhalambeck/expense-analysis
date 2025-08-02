@@ -20,6 +20,18 @@ Your goal is to turn this data into clear, actionable insights that help the tea
 
 ⸻
 
+📋 Expense Policy Reference
+
+| **Category**       | **Policy Rule**                                                                 |
+|--------------------|----------------------------------------------------------------------------------|
+| **Travel**         | Max **$855** per day per employee                                               |
+| **Meals**          | Max **$55** per meal per employee                                               |
+| **Office Supplies**| Any transaction over **$650** requires approval                                 |
+| **Training**       | Max **$1,400** per employee per training/course                                 |
+| **Software**       | Any new software purchase over **$2,000** must be procurement-approved          |
+
+⸻
+
 📁 Data Source – SmallCompany.csv
 
 This file contains 100 rows of fictional expense data from the small, specialized tech and professional services firm. Each row represents an individual transaction made by one of six core employees across various departments and categories.
@@ -177,14 +189,6 @@ This visual quickly surfaces policy misalignment, budget anomalies, or mispriori
 
 ⸻
 
-🔍 Project Summary
-    •    Department Focus: Sales
-    •    Category Analyzed: Office Supplies
-    •    Dataset: Internal transactions (date, id, employee, vendor, amount, category, department)
-    •    Tools Used: Python, Pandas, DuckDB, Seaborn, Matplotlib, Z-score analysis, Custom benchmarking
-
-⸻
-
 📈 Key Insights
     •    ⚠️ Single Outlier Transaction: One $972 purchase = 40% of category spend
     •    👤 Employee-Level Imbalance: David Kim far above team average
@@ -195,52 +199,62 @@ This visual quickly surfaces policy misalignment, budget anomalies, or mispriori
 
 ⸻
 
-📋 Expense Policy Reference
+🧭 Project Scope & Exploration
 
-| **Category**       | **Policy Rule**                                                                 |
-|--------------------|----------------------------------------------------------------------------------|
-| **Travel**         | Max **$855** per day per employee                                               |
-| **Meals**          | Max **$55** per meal per employee                                               |
-| **Office Supplies**| Any transaction over **$650** requires approval                                 |
-| **Training**       | Max **$1,400** per employee per training/course                                 |
-| **Software**       | Any new software purchase over **$2,000** must be procurement-approved          |
+While the final deep dive focuses on Sales department Office Supplies, this project was designed to evaluate company-wide expense behavior.
+
+The /exploration/ folder contains a broader set of scripts that:
+	•	Flag policy violations across all departments
+	•	Detect vendor concentration and same-day spend patterns
+	•	Surface timing trends, category gaps, and monthly fluctuations
+
+These exploratory scripts reflect my full analytical process. They extend the project beyond just Sales — showing how I approached company-wide risk, fairness, and policy alignment — even if only one segment was fully finalized due to time.
+
+📁 See all supporting analysis in /exploration/ — these represent thoughtful extensions of the core project, not abandoned work.
 
 ⸻
 
-📂 Repository Structure
+🔍 Project Summary
+	•	Department Focus (Finalized Deep Dive): Sales
+	•	Category Analyzed (Finalized Deep Dive): Office Supplies
+	•	Company-Wide Exploration Topics (in /exploration/):
+ • Meals and Travel policy checks
+ • Vendor concentration & repeat use
+ • Same-day transaction detection
+ • Monthly trend visualization
+	•	Dataset: Internal transactions with fields date, id, employee, vendor, amount, category, department
+	•	Tools Used: Python, Pandas, DuckDB, Seaborn, Matplotlib, Z-score analysis, Custom benchmarking
+ 
+ ⸻
+
+ 📂 Repository Structure
 
 project-folder/
 │
-├── scripts/
-│   └── 01_sales_office_supplies_analysis.py
+├── charts/
+│   ├── employee_spend.png
+│   ├── vendor_breakdown.png
+│   ├── transactions.png
+│   └── category_tiers.png
 │
 ├── data/
-│   └── SmallCompany.csv
+│   └── SmallCompany.csv
 │
-├── charts/
-│   ├── employee_spend.png
-│   ├── vendor_breakdown.png
-│   ├── transaction_outlier.png
-│   └── category_tiers.png
+├── exploration/
+│   ├── monthly_spend.py
+│   ├── policy_checks.py
+│   ├── sales_check.py
+│   ├── same_day_vendor.py
+│   └── vendor_concentration.py
 │
+├── scripts/
+│   ├── category_benchmarks.py
+│   └── sales_office_supplies.py
+│
+├── requirements.txt
 └── README.md
 
-⸻
-
-📌 What I Planned (But Didn’t Finish)
-
-Originally planned to expand analysis to:
-    •    Full company policy checks
-    •    Same-day vendor flagging
-    •    Broader vendor benchmarking
-    •    Timing trends by department
-    •    Monthly spend seasonality
-
-Time constraints led to a focused, polished Sales deep dive instead.
-
-👉 See additional scripts in /exploration/ for experiments and early versions of broader analysis ideas.
-
-⸻
+ ⸻
 
 🧠 Skills Demonstrated
     •    Real-world anomaly detection using z-scores
