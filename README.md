@@ -80,7 +80,9 @@ The resulting heatmap offers:
 
 🧾 Sales Department – Office Supplies Deep Dive
 
-This section focuses on how the Sales department spends on Office Supplies, breaking down patterns by employee, vendor, individual transactions and time.
+This section investigates how the Sales department spends on Office Supplies, breaking down activity by employee, vendor, timing, and transaction detail.
+
+The goal is to surface potential fairness issues, policy concerns, or unusual patterns that wouldn’t be obvious from totals alone. To do this, we apply a targeted workflow that:
 
 Using a custom analysis workflow, we:
     •    Identify employees or vendors with unusually high spending using z-score thresholds
@@ -95,7 +97,7 @@ This approach helps surface potential fairness issues, policy concerns, or unusu
 
 🧾 Office Supplies Logic Explained
 
-This analysis takes a focused look at Office Supplies spending within the Sales department, using z-score thresholds and visual breakdowns to identify potential red flags — whether it’s an overactive employee, a concentrated vendor, an oddly timed purchase, or a standout one-off transaction.
+To execute the analysis, we followed a structured process designed to flag outliers and spot anomalies across multiple dimensions.
 
 ✅ Step-by-Step Logic
     1.    Targeted Subset
@@ -120,13 +122,12 @@ Show every transaction by employee — helpful to spot extreme values.
 
 🎯 Why It Matters
 
-This focused analysis helps:
-    •    Catch unusual spending behavior
-    •    Detect vendor dependence or misuse
-    •    Surface subtle trends or fairness concerns
+By narrowing the lens to one department and category, this workflow enables the finance team to:
+	•	Detect fairness or policy violations
+	•	Identify vendor overuse or odd timing behavior
+	•	Flag single transactions that skew totals disproportionately
 
-Ultimately, it supports smarter audits, tighter controls, and cleaner budgets.
-
+This type of department-level investigation supports smarter audits, tighter controls, and cleaner, more transparent budgets.
 ⸻
 
 📊 Final Visuals and Insights
