@@ -4,7 +4,7 @@
 
 📌 Executive Summary
 
-This project analyzes expense data for a small tech firm to detect fairness issues, policy violations, and unusual spending patterns. It combines company-wide benchmarking with a deep dive into the Sales department’s Office Supplies spend — surfacing red flags through z-score analysis, visual storytelling, and custom business logic. Broader scripts in the /exploration/ folder reflect a full-company view, while the finalized focus area shows how to drive actionable insights in one targeted domain.
+This project analyzes expense data for a small firm to detect fairness issues, policy violations, and unusual spending patterns. It combines company-wide benchmarking with a deep dive into the Sales department’s Office Supplies spend — surfacing red flags through z-score analysis, visual storytelling, and custom business logic. Broader scripts in the /exploration/ folder reflect a full-company view, while the finalized focus area shows how to drive actionable insights in one targeted domain.
 
 ⸻
 
@@ -28,7 +28,7 @@ Your goal is to turn this data into clear, actionable insights that help the tea
 
 ⸻
 
-📋 Expense Policy Reference
+📋 Example Company Expense Policy Reference
 
 | **Category**       | **Policy Rule**                                                                 |
 |--------------------|----------------------------------------------------------------------------------|
@@ -56,7 +56,6 @@ This file contains 100 rows of fictional expense data from the small, specialize
     •    amount – Transaction amount in USD
 
 🧾 Purpose:
-
 This file serves as the raw input for all analysis in this project. It was designed to mimic realistic company spending behavior, including:
     •    Overlapping responsibilities across employees and departments
     •    Diverse vendor usage
@@ -64,11 +63,19 @@ This file serves as the raw input for all analysis in this project. It was desig
 
 ⸻
 
-📊 Benchmarking Logic Explained
+📊 Category-Level Benchmarking (All Departments)
 
-To help identify which department-category pairs might warrant deeper investigation, I built a custom benchmarking system. This system scores each department based on how closely its spending aligns with expectations.
+Comparing each department’s spending behavior to what’s expected.
 
-✅ Step-by-Step Logic
+This section evaluates how each department’s spending behavior aligns with expectations across categories like Travel, Meals, Office Supplies, Training, and Travel.
+
+To do this, I created a custom benchmarking system that:
+	•	Calculates what % of each department’s budget goes to each category
+	•	Compares that to what’s typical across all departments
+	•	Defines expected spend levels (Low, Medium-Low, Medium, Medium-High, High) for each department and category
+	•	Visualizes how far off each department is from those expectations using a color-coded heatmap
+
+✅ Step-by-Step Benchmarking Process
     1.    % of Department Spend by Category
 Percent = (Category Spend / Total Dept Spend) × 100
 This gives a normalized view of each department’s spending priorities.
@@ -85,7 +92,9 @@ In-between midpoints:
     •    Medium–High = avg of Medium and High
     4.    Manual Tier Expectations
 Based on business context, I manually defined expected tier behavior for each department/category pair.
-   📌 Note: Full expected tier assignments (e.g., Sales = Low on Office Supplies, High on Travel) are shown in the code for transparency. These were based on common sense assumptions for a small team with shared spending responsibilities.
+
+   📝 Note: Full tier assignments are available in the code for transparency. These were based on common sense assumptions for a small team with shared spending responsibilities.
+   
     5.    Deviation from Expected Benchmark
 Final Score = Actual Deviation – Expected Tier Midpoint
 This reflects how far each department is from where they should be.
