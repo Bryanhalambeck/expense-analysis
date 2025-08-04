@@ -114,58 +114,72 @@ This approach doesn’t just highlight high or low spenders — it shows where d
 
 The resulting heatmap offers:  
 - ✅ **Targeted Diagnosis:** Flag potential problem areas  
-- 📊 **Executive Overview:** Give leadership a clean snapshot of department behavior  
-
+- 📊 **Executive Overview:** Give leadership a clean snapshot of department behavior
+  
 ⸻
 
-🧾 Sales Department Deep Dive – Office Supplies
+### 🧾 Sales Department Deep Dive – Office Supplies
 
 Zooming in on how the Sales department spends on Office Supplies — by employee, vendor, timing, and transaction detail.
 
 While the broader project explores company-wide behavior, this finalized deep dive focuses on a single department-category combo to surface red flags that wouldn’t be obvious from totals alone.
 
 To do this, I built a focused workflow that:
-	•	Flags employees or vendors with unusually high spend using z-scores
-	•	Tracks monthly spend trends to spot spikes or seasonal patterns
-	•	Detects purchases on weekends or U.S. holidays
-	•	Visualizes spending concentration by employee, vendor, and transaction
-	•	Highlights individual outliers for deeper investigation
 
-✅ Step-by-Step Analysis Workflow
-	1.	Targeted Subset
+- Flags employees or vendors with unusually high spend using z-scores  
+- Tracks monthly spend trends to spot spikes or seasonal patterns  
+- Detects purchases on weekends or U.S. holidays  
+- Visualizes spending concentration by employee, vendor, and transaction  
+- Highlights individual outliers for deeper investigation  
+
+---
+
+### ✅ Step-by-Step Analysis Workflow
+
+1. **Targeted Subset**  
  → Focus only on Sales department’s Office Supplies transactions.
-	2.	Employee-Level Analysis
- → Sum each employee’s spend in this category.
+
+2. **Employee-Level Analysis**  
+ → Sum each employee’s spend in this category.  
  → Flag z-scores > 1.0 to catch above-average behavior.
-	3.	Vendor-Level Analysis
- → Same logic applied to vendors.
+
+3. **Vendor-Level Analysis**  
+ → Same logic applied to vendors.  
  → Flag z-scores > 1.5 to catch overreliance.
-	4.	Monthly Spend Trends
+
+4. **Monthly Spend Trends**  
  → Group spending by month to detect seasonal or unusual spikes.
-	5.	Transaction-Level Outliers
- → Calculate z-scores for each individual transaction.
- → Flag z > 1.5 to catch standout anomalies.
- 
- 📝 Note: Z-score thresholds vary slightly to avoid false positives.
-	6.	Policy Checks – Timing Flags
+
+5. **Transaction-Level Outliers**  
+ → Calculate z-scores for each individual transaction.  
+ → Flag z > 1.5 to catch standout anomalies.  
+📝 *Note: Z-score thresholds vary slightly to avoid false positives.*
+
+6. **Policy Checks – Timing Flags**  
  → Flag any purchases made on weekends or U.S. holidays.
-	7.	Employee % Share Chart
- → Show each employee’s % of total category spend.
+
+7. **Employee % Share Chart**  
+ → Show each employee’s % of total category spend.  
  → Compare against a fair split (≈16.7%) to spot imbalances.
-	8.	Vendor Breakdown Pie Chart
+
+8. **Vendor Breakdown Pie Chart**  
  → Visualize vendor concentration — who got the most business?
-	9.	Transaction Strip Plot
+
+9. **Transaction Strip Plot**  
  → Show every transaction by employee to spot extremes or clusters.
 
+---
 
-🎯 Why It Matters
+### 🎯 Why It Matters
 
 By narrowing the lens to one department and category, this workflow enables the finance team to:
-	•	Detect fairness or policy violations
-	•	Identify vendor overuse or odd timing behavior
-	•	Flag single transactions that skew totals disproportionately
+
+- Detect fairness or policy violations  
+- Identify vendor overuse or odd timing behavior  
+- Flag single transactions that skew totals disproportionately  
 
 This type of department-level investigation supports smarter audits, tighter controls, and cleaner, more transparent budgets.
+
 ⸻
 
 📊 Final Visuals and Insights
