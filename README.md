@@ -77,27 +77,26 @@ To do this, I created a custom benchmarking system that:
 
 ✅ Step-by-Step Benchmarking Process
     1.    % of Department Spend by Category
-Percent = (Category Spend / Total Dept Spend) × 100
-This gives a normalized view of each department’s spending priorities.
+→ Percent = (Category Spend / Total Dept Spend) × 100
+→ This gives a normalized view of each department’s spending priorities.
     2.    Deviation from Category Average
-Deviation = (This Dept’s % Spend) – (Category Average % Spend)
-This tells us how unusually high or low a department is spending in each area.
+→ Deviation = (This Dept’s % Spend) – (Category Average % Spend)
+→ This tells us how unusually high or low a department is spending in each area.
     3.    Tier Midpoints from Percentiles
-I split all deviation values into percentile-based tiers:
+→ I split all deviation values into percentile-based tiers:
     •    Bottom 33% → Low
     •    Middle 33% → Medium
     •    Top 33% → High
-In-between midpoints:
+→ In-between midpoints:
     •    Medium–Low = avg of Low and Medium
     •    Medium–High = avg of Medium and High
     4.    Manual Tier Expectations
-Based on business context, I manually defined expected tier behavior for each department/category pair.
+→ Based on business context, I manually defined expected tier behavior for each department/category pair. 
 
-   📝 Note: Full tier assignments are available in the code for transparency. These were based on common sense assumptions for a small team with shared spending responsibilities.
-   
+📝 Note: Full tier assignments are available in the code for transparency. These were based on common sense assumptions for a small team with shared spending responsibilities.
     5.    Deviation from Expected Benchmark
-Final Score = Actual Deviation – Expected Tier Midpoint
-This reflects how far each department is from where they should be.
+→ Final Score = Actual Deviation – Expected Tier Midpoint
+→ This reflects how far each department is from where they should be.
 
 🎯 Why It Matters
 
@@ -109,47 +108,45 @@ The resulting heatmap offers:
 
 ⸻
 
-🧾 Sales Department – Office Supplies Deep Dive
+🧾 Sales Department Deep Dive – Office Supplies
 
-This section investigates how the Sales department spends on Office Supplies, breaking down activity by employee, vendor, timing, and transaction detail.
+Zooming in on how the Sales department spends on Office Supplies — by employee, vendor, timing, and transaction detail.
 
-The goal is to surface potential fairness issues, policy concerns, or unusual patterns that wouldn’t be obvious from totals alone. To do this, we apply a targeted workflow that:
+While the broader project explores company-wide behavior, this finalized deep dive focuses on a single department-category combo to surface red flags that wouldn’t be obvious from totals alone.
 
-Using a custom analysis workflow, we:
-    •    Identify employees or vendors with unusually high spending using z-score thresholds
-    •    Track monthly spending trends to spot seasonal spikes or irregular activity
-    •    Flag any purchases made on weekends or U.S. holidays
-    •    Visualize spending concentration by employee, individual transaction and vendor
-    •    Highlight transaction-level outliers to uncover red flags
+To do this, I built a focused workflow that:
+	•	Flags employees or vendors with unusually high spend using z-scores
+	•	Tracks monthly spend trends to spot spikes or seasonal patterns
+	•	Detects purchases on weekends or U.S. holidays
+	•	Visualizes spending concentration by employee, vendor, and transaction
+	•	Highlights individual outliers for deeper investigation
 
-This approach helps surface potential fairness issues, policy concerns, or unusual patterns that wouldn’t be obvious from totals alone.
+✅ Step-by-Step Analysis Workflow
+	1.	Targeted Subset
+ → Focus only on Sales department’s Office Supplies transactions.
+	2.	Employee-Level Analysis
+ → Sum each employee’s spend in this category.
+ → Flag z-scores > 1.0 to catch above-average behavior.
+	3.	Vendor-Level Analysis
+ → Same logic applied to vendors.
+ → Flag z-scores > 1.5 to catch overreliance.
+	4.	Monthly Spend Trends
+ → Group spending by month to detect seasonal or unusual spikes.
+	5.	Transaction-Level Outliers
+ → Calculate z-scores for each individual transaction.
+ → Flag z > 1.5 to catch standout anomalies.
+ 
+ 📝 Note: Z-score thresholds vary slightly to avoid false positives.
+	6.	Policy Checks – Timing Flags
+ → Flag any purchases made on weekends or U.S. holidays.
+	7.	Employee % Share Chart
+ → Show each employee’s % of total category spend.
+ → Compare against a fair split (≈16.7%) to spot imbalances.
+	8.	Vendor Breakdown Pie Chart
+ → Visualize vendor concentration — who got the most business?
+	9.	Transaction Strip Plot
+ → Show every transaction by employee to spot extremes or clusters.
 
-⸻
-
-🧾 Office Supplies Logic Explained
-
-To execute the analysis, we followed a structured process designed to flag outliers and spot anomalies across multiple dimensions.
-
-✅ Step-by-Step Logic
-    1.    Targeted Subset
-Focus on Sales department’s Office Supplies transactions.
-    2.    Employee-Level Analysis
-Sum each employee’s Office Supplies spend, flag z-scores > 1.0.
-    3.    Vendor-Level Analysis
-Same logic applied to vendors, flag z-scores > 1.5.
-    4.    Monthly Spend Trends
-Group spend by month to identify spikes or seasonality.
-    5.    Transaction-Level Outliers
-Calculate z-score per transaction, flag z > 1.5.
-   📌 Note: Z-score thresholds vary to avoid false positives.
-    6.    Policy Checks (Weekends + Holidays)
-Flag purchases made outside normal business days.
-    7.    Employee % Share Bar Chart
-Visualize how employee spend compares to even-split expectations.
-    8.    Vendor Breakdown Pie Chart
-Show how vendor usage is distributed.
-    9.    Transaction Strip Plot
-Show every transaction by employee — helpful to spot extreme values.
 
 🎯 Why It Matters
 
