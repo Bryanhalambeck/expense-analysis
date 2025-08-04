@@ -28,7 +28,7 @@ Your goal is to turn this data into clear, actionable insights that help the tea
 
 ⸻
 
-📋 Example Company's Expense Policy Reference
+### 📋 Example Company's Expense Policy Reference
 
 | **Category**       | **Policy Rule**                                                                 |
 |--------------------|----------------------------------------------------------------------------------|
@@ -64,48 +64,57 @@ This file serves as the raw input for all analysis in this project. It was desig
 
 ⸻
 
-📊 Category-Level Benchmarking (All Departments)
+### 📊 Category-Level Benchmarking (All Departments)
 
-Comparing each department’s spending behavior to what’s expected.
+**Comparing each department’s spending behavior to what’s expected.**
 
 This section evaluates how each department’s spending behavior aligns with expectations across categories like Travel, Meals, Office Supplies, Training, and Travel.
 
 To do this, I created a custom benchmarking system that:
-	•	Calculates what % of each department’s budget goes to each category
-	•	Compares that to what’s typical across all departments
-	•	Defines expected spend levels (Low, Medium-Low, Medium, Medium-High, High) for each department and category
-	•	Visualizes how far off each department is from those expectations using a color-coded heatmap
 
-✅ Step-by-Step Benchmarking Process
-    1.    % of Department Spend by Category
-→ Percent = (Category Spend / Total Dept Spend) × 100
-→ This gives a normalized view of each department’s spending priorities.
-    2.    Deviation from Category Average
-→ Deviation = (This Dept’s % Spend) – (Category Average % Spend)
-→ This tells us how unusually high or low a department is spending in each area.
-    3.    Tier Midpoints from Percentiles
-→ I split all deviation values into percentile-based tiers:
-    •    Bottom 33% → Low
-    •    Middle 33% → Medium
-    •    Top 33% → High
-→ In-between midpoints:
-    •    Medium–Low = avg of Low and Medium
-    •    Medium–High = avg of Medium and High
-    4.    Manual Tier Expectations
-→ Based on business context, I manually defined expected tier behavior for each department/category pair. 
+- Calculates what % of each department’s budget goes to each category  
+- Compares that to what’s typical across all departments  
+- Defines expected spend levels (Low, Medium-Low, Medium, Medium-High, High) for each department and category  
+- Visualizes how far off each department is from those expectations using a color-coded heatmap  
 
-📝 Note: Full tier assignments are available in the code for transparency. These were based on common sense assumptions for a small team with shared spending responsibilities.
-    5.    Deviation from Expected Benchmark
-→ Final Score = Actual Deviation – Expected Tier Midpoint
-→ This reflects how far each department is from where they should be.
+---
 
-🎯 Why It Matters
+#### ✅ Step-by-Step Benchmarking Process
+
+1. **% of Department Spend by Category**  
+   `Percent = (Category Spend / Total Dept Spend) × 100`  
+   → This gives a normalized view of each department’s spending priorities.
+
+2. **Deviation from Category Average**  
+   `Deviation = (This Dept’s % Spend) – (Category Average % Spend)`  
+   → This tells us how unusually high or low a department is spending in each area.
+
+3. **Tier Midpoints from Percentiles**  
+   I split all deviation values into percentile-based tiers:  
+   - Bottom 33% → Low  
+   - Middle 33% → Medium  
+   - Top 33% → High  
+   *In-between midpoints:*  
+   - Medium–Low = average of Low and Medium  
+   - Medium–High = average of Medium and High  
+
+4. **Manual Tier Expectations**  
+   Based on business context, I manually defined expected tier behavior for each department/category pair.  
+   📝 *Note: Full tier assignments are available in the code for transparency. These were based on common sense assumptions for a small team with shared spending responsibilities.*
+
+5. **Deviation from Expected Benchmark**  
+   `Final Score = Actual Deviation – Expected Tier Midpoint`  
+   → This reflects how far each department is from where they should be.
+
+---
+
+#### 🎯 Why It Matters
 
 This approach doesn’t just highlight high or low spenders — it shows where departments are behaving differently than expected.
 
-The resulting heatmap offers:
-    •    ✅ Targeted Diagnosis: Flag potential problem areas.
-    •    📊 Executive Overview: Give leadership a clean snapshot of department behavior.
+The resulting heatmap offers:  
+- ✅ **Targeted Diagnosis:** Flag potential problem areas  
+- 📊 **Executive Overview:** Give leadership a clean snapshot of department behavior  
 
 ⸻
 
