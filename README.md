@@ -28,7 +28,7 @@ Your goal is to turn this data into clear, actionable insights that help the tea
 
 ⸻
 
-📋 Example Company Expense Policy Reference
+📋 Example Company's Expense Policy Reference
 
 | **Category**       | **Policy Rule**                                                                 |
 |--------------------|----------------------------------------------------------------------------------|
