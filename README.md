@@ -47,7 +47,7 @@ Your goal is to turn this data into clear, actionable insights that help the tea
 This file contains 100 rows of fictional expense data from the small, specialized tech and professional services firm. Each row represents an individual transaction made by one of six core employees across various departments and categories.
 
 🔍 Columns:
-    •    id – Unique transaction ID
+    •    id – Unique transaction ID
     •    date – Purchase date (MM/DD/YY format)
     •    department – Department responsible for the spend (e.g., Sales, IT, Marketing)
     •    vendor – The company or service where the expense occurred
