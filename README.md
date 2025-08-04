@@ -136,49 +136,49 @@ To do this, I built a focused workflow that:
 
 ### ✅ Step-by-Step Analysis Workflow
 
-1. **Targeted Subset**  
- → Focus only on Sales department’s Office Supplies transactions.
+**Targeted Subset**  
+Focus only on Sales department’s Office Supplies transactions.
 
-2. **Employee-Level Analysis**  
- → Sum each employee’s spend in this category.  
- → Flag z-scores > 1.0 to catch above-average behavior.
+**Employee-Level Analysis**  
+Sum each employee’s spend in this category.  
+→ Flag z-scores > 1.0 to catch above-average behavior.
 
-3. **Vendor-Level Analysis**  
- → Same logic applied to vendors.  
- → Flag z-scores > 1.5 to catch overreliance.
+**Vendor-Level Analysis**  
+Apply same logic to vendors.  
+→ Flag z-scores > 1.5 to catch overreliance.
 
-4. **Monthly Spend Trends**  
- → Group spending by month to detect seasonal or unusual spikes.
+**Monthly Spend Trends**  
+Group spending by month to detect seasonal or unusual spikes.
 
-5. **Transaction-Level Outliers**  
- → Calculate z-scores for each individual transaction.  
- → Flag z > 1.5 to catch standout anomalies.  
+**Transaction-Level Outliers**  
+Calculate z-scores for each individual transaction.  
+→ Flag z > 1.5 to catch standout anomalies.  
 📝 *Note: Z-score thresholds vary slightly to avoid false positives.*
 
-6. **Policy Checks – Timing Flags**  
- → Flag any purchases made on weekends or U.S. holidays.
+**Policy Checks – Timing Flags**  
+Flag any purchases made on weekends or U.S. holidays.
 
-7. **Employee % Share Chart**  
- → Show each employee’s % of total category spend.  
- → Compare against a fair split (≈16.7%) to spot imbalances.
+**Employee % Share Chart**  
+Show each employee’s % of total category spend.  
+→ Compare against a fair split (≈16.7%) to spot imbalances.
 
-8. **Vendor Breakdown Pie Chart**  
- → Visualize vendor concentration — who got the most business?
+**Vendor Breakdown Pie Chart**  
+Visualize vendor concentration — who got the most business?
 
-9. **Transaction Strip Plot**  
- → Show every transaction by employee to spot extremes or clusters.
+**Transaction Strip Plot**  
+Show every transaction by employee to spot extremes or clusters.
 
 ---
 
 ### 🎯 Why It Matters
 
-By narrowing the lens to one department and category, this workflow enables the finance team to:
+This department-level workflow enables the finance team to:
 
-- Detect fairness or policy violations  
-- Identify vendor overuse or odd timing behavior  
-- Flag single transactions that skew totals disproportionately  
+✅ Detect fairness or policy violations  
+✅ Identify vendor overuse or odd timing behavior  
+✅ Flag single transactions that skew totals disproportionately  
 
-This type of department-level investigation supports smarter audits, tighter controls, and cleaner, more transparent budgets.
+This type of targeted analysis supports smarter audits, tighter controls, and cleaner, more transparent budgets.
 
 ⸻
 
