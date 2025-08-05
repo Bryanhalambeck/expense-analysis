@@ -30,15 +30,15 @@ Your goal is to turn this data into clear, actionable insights that help the tea
 
 ### 📋 Example Company's Expense Policy Reference
 
-| **Category**       | **Policy Rule**                                                                 |
-|--------------------|----------------------------------------------------------------------------------|
-| **Travel**         | Max **$855** per day per employee                                               |
-| **Meals**          | Max **$55** per meal per employee                                               |
-| **Office Supplies**| Any transaction over **$650** requires approval                                 |
-| **Training**       | Max **$1,400** per employee per training/course                                 |
-| **Software**       | Any new software purchase over **$2,000** must be procurement-approved          |
+| **Category**        | **Policy Rule**                                                                 |
+|---------------------|----------------------------------------------------------------------------------|
+| **Travel**          | Max **$855** per day per employee                                               |
+| **Meals**           | Max **$55** per meal per employee                                               |
+| **Office Supplies** | Any transaction over **$650** requires approval                                 |
+| **Training**        | Max **$1,400** per employee per training/course                                 |
+| **Software**        | Any new software purchase over **$2,000** must be procurement-approved          |
 
-⸻
+---
 
 ### 📁 Data Source – `SmallCompany.csv`
 
@@ -60,9 +60,9 @@ This file serves as the raw input for all analysis in this project. It was desig
 
 - Overlapping responsibilities across employees and departments  
 - Diverse vendor usage  
-- A variety of expense types  
+- A variety of expense types
 
-⸻
+---
 
 ### 📊 Category-Level Benchmarking (All Departments)
 
