@@ -146,7 +146,7 @@ Sum each employee’s spend in this category.
 → Flag z-scores > 1.0 to catch above-average behavior.
 
 **Vendor-Level Analysis**  
-Apply same logic to vendors.  
+Sum each vendor’s spend in this category.  
 → Flag z-scores > 1.5 to catch overreliance.
 
 **Monthly Spend Trends**  
@@ -157,7 +157,7 @@ Calculate z-scores for each individual transaction.
 → Flag z > 1.5 to catch standout anomalies.  
 📝 *Note: Z-score thresholds vary slightly to avoid false positives.*
 
-**Policy Checks – Timing Flags**  
+**Timing Flags**  
 Flag any purchases made on weekends or U.S. holidays.
 
 **Employee % Share Chart**  
