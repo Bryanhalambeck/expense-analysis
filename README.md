@@ -186,6 +186,7 @@ This supports smarter audits, tighter controls, and cleaner, more transparent bu
 
 ### 📊 Final Visuals and Insights
 
+![Sales Employee Share Z-Score](charts/employee_spend.png)  
 📎 **David Kim accounts for over 40% of total Office Supplies spend** — flagged via z-score as a potential outlier, well above the expected average of ~16.7%.
 
 This bar chart compares each employee’s share of total Office Supplies spending within the Sales department.  
@@ -198,6 +199,7 @@ This view helps surface fairness issues and possible budget misuse that wouldn�
 
 ---
 
+![Vendor Breakdown Pie Chart](charts/vendor_breakdown.png)  
 📎 **Over 60% of all Office Supplies purchases in Sales went to Staples**, suggesting a heavy vendor concentration.
 
 This pie chart breaks down which vendors received Office Supplies spending from the Sales department.
@@ -210,6 +212,7 @@ This visualization helps highlight potential overreliance on specific vendors an
 
 ---
 
+![Transaction Outlier Chart](charts/transaction_outlier.png)  
 📎 **A single $972 transaction by David Kim** stands out at over +2 standard deviations above the mean — flagged as a potential red flag based on z-score.
 
 This chart shows all individual Office Supplies transactions in the Sales department, plotted by employee.
@@ -222,6 +225,7 @@ This view helps uncover isolated spikes in spending that wouldn’t be caught th
 
 ---
 
+![Category Benchmark Heatmap](charts/category_tiers.png)  
 📎 **This heatmap shows how far each department’s category-level spend deviates from its expected benchmark** — highlighting major over- or under-spending areas.
 
 Each cell represents a department’s deviation (in percentage points) from its expected category spending tier.
