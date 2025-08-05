@@ -178,7 +178,7 @@ This department-level workflow enables the finance team to:
 
 - ✅ Flag fairness concerns in how spending is distributed  
 - ✅ Spot vendor overuse or unusual purchase timing  
-- ✅ Identify transactions that heavily skew department totals  
+- ✅ Identify transactions that significantly impact total spend
 
 This supports smarter audits, tighter controls, and cleaner, more transparent budgets.
 
