@@ -66,9 +66,9 @@ This file serves as the raw input for all analysis in this project. It was desig
 
 ### 📊 Category-Level Benchmarking (All Departments)
 
-**Comparing each department’s spending behavior to what’s expected.**
+Comparing each department’s spending behavior to what’s expected.
 
-This section evaluates how each department’s spending behavior aligns with expectations across categories like Travel, Meals, Office Supplies, Training, and Travel.
+This section evaluates how each department’s spending behavior aligns with expectations across categories like Travel, Meals, Office Supplies, Training, and more.
 
 To do this, I created a custom benchmarking system that:
 
@@ -79,44 +79,46 @@ To do this, I created a custom benchmarking system that:
 
 ---
 
-#### ✅ Step-by-Step Benchmarking Process
+### ✅ Step-by-Step Benchmarking Process
 
-1. **% of Department Spend by Category**  
-   `Percent = (Category Spend / Total Dept Spend) × 100`  
-   → This gives a normalized view of each department’s spending priorities.
+**% of Department Spend by Category**  
+Percent = (Category Spend / Total Dept Spend) × 100  
+→ This gives a normalized view of each department’s spending priorities.
 
-2. **Deviation from Category Average**  
-   `Deviation = (This Dept’s % Spend) – (Category Average % Spend)`  
-   → This tells us how unusually high or low a department is spending in each area.
+**Deviation from Category Average**  
+Deviation = (This Dept’s % Spend) – (Category Average % Spend)  
+→ This tells us how unusually high or low a department is spending in each area.
 
-3. **Tier Midpoints from Percentiles**  
-   I split all deviation values into percentile-based tiers:  
-   - Bottom 33% → Low  
-   - Middle 33% → Medium  
-   - Top 33% → High  
-   *In-between midpoints:*  
-   - Medium–Low = average of Low and Medium  
-   - Medium–High = average of Medium and High  
+**Tier Midpoints from Percentiles**  
+I split all deviation values into percentile-based tiers:  
+- Bottom 33% → Low  
+- Middle 33% → Medium  
+- Top 33% → High  
 
-4. **Manual Tier Expectations**  
-   Based on business context, I manually defined expected tier behavior for each department/category pair.  
-   📝 *Note: Full tier assignments are available in the code for transparency. These were based on common sense assumptions for a small team with shared spending responsibilities.*
+In-between midpoints:  
+- Medium–Low = average of Low and Medium  
+- Medium–High = average of Medium and High  
 
-5. **Deviation from Expected Benchmark**  
-   `Final Score = Actual Deviation – Expected Tier Midpoint`  
-   → This reflects how far each department is from where they should be.
+**Manual Tier Expectations**  
+Based on business context, I manually defined expected tier behavior for each department/category pair.  
+📝 *Note: Full tier assignments are available in the code for transparency. These were based on common sense assumptions for a small team with shared spending responsibilities.*
+
+**Deviation from Expected Benchmark**  
+Final Score = Actual Deviation – Expected Tier Midpoint  
+→ This reflects how far each department is from where they should be.
 
 ---
 
-#### 🎯 Why It Matters
+### 🎯 Why It Matters
 
 This approach doesn’t just highlight high or low spenders — it shows where departments are behaving differently than expected.
 
-The resulting heatmap offers:  
-- ✅ **Targeted Diagnosis:** Flag potential problem areas  
-- 📊 **Executive Overview:** Give leadership a clean snapshot of department behavior
-  
-⸻
+The resulting heatmap offers:
+
+- ✅ Targeted Diagnosis: Flag potential problem areas  
+- 📊 Executive Overview: Give leadership a clean snapshot of department behavior
+
+---
 
 ### 🧾 Sales Department Deep Dive – Office Supplies
 
@@ -174,9 +176,9 @@ Show every transaction by employee to spot extremes or clusters.
 
 This department-level workflow enables the finance team to:
 
-✅ Detect fairness or policy violations  
-✅ Identify vendor overuse or odd timing behavior  
-✅ Flag single transactions that skew totals disproportionately  
+- ✅ Detect fairness or policy violations  
+- ✅ Identify vendor overuse or odd timing behavior  
+- ✅ Flag single transactions that skew totals disproportionately  
 
 This type of targeted analysis supports smarter audits, tighter controls, and cleaner, more transparent budgets.
 
