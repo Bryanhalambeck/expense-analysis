@@ -176,11 +176,11 @@ Show every transaction by employee to spot extremes or clusters.
 
 This department-level workflow enables the finance team to:
 
-- ✅ Detect fairness or policy violations  
-- ✅ Identify vendor overuse or odd timing behavior  
-- ✅ Flag single transactions that skew totals disproportionately  
+- ✅ Flag fairness concerns in how spending is distributed  
+- ✅ Spot vendor overuse or unusual purchase timing  
+- ✅ Identify transactions that heavily skew department totals  
 
-This type of targeted analysis supports smarter audits, tighter controls, and cleaner, more transparent budgets.
+This supports smarter audits, tighter controls, and cleaner, more transparent budgets.
 
 ⸻
 
