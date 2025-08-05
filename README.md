@@ -182,54 +182,62 @@ This department-level workflow enables the finance team to:
 
 This supports smarter audits, tighter controls, and cleaner, more transparent budgets.
 
-⸻
+---
 
-📊 Final Visuals and Insights
+### 📊 Final Visuals and Insights
 
-![Sales Employee Share Z-Score](charts/employee_spend.png)  
-📎 David Kim accounts for over 40% of total Office Supplies spend — flagged via z-score as a potential outlier, well above the expected average of ~16.7%.
+📎 **David Kim accounts for over 40% of total Office Supplies spend** — flagged via z-score as a potential outlier, well above the expected average of ~16.7%.
 
-This bar chart compares each employee’s share of total Office Supplies spending within the Sales department.
+This bar chart compares each employee’s share of total Office Supplies spending within the Sales department.  
 The red dashed line represents the expected even share if spending were split equally among all employees.
-    •    Blue bars indicate within-normal-range spending.
-    •    Orange bars mark employees whose spending was flagged as an outlier (z-score > 1.0 or < -1.0).
+
+- 🔵 Blue bars indicate within-normal-range spending  
+- 🟠 Orange bars mark employees whose spending was flagged as an outlier (z-score > 1.0 or < -1.0)
 
 This view helps surface fairness issues and possible budget misuse that wouldn’t be clear from totals alone.
 
-![Sales Employee Share Z-Score](charts/vendor_breakdown.png)  
-📎 Over 60% of all Office Supplies purchases in Sales went to Staples, suggesting a heavy vendor concentration.
+---
+
+📎 **Over 60% of all Office Supplies purchases in Sales went to Staples**, suggesting a heavy vendor concentration.
 
 This pie chart breaks down which vendors received Office Supplies spending from the Sales department.
-    •    A dominant share went to Staples (60.6%), while Amazon and Office Depot split most of the remaining spend.
-    •    A smaller portion (4.4%) went to Hilton — an unusual entry for this category.
+
+- 🏪 A dominant share went to **Staples (60.6%)**  
+- 📦 Amazon and Office Depot split most of the remaining spend  
+- ❓ A smaller portion (4.4%) went to **Hilton** — an unusual entry for this category
 
 This visualization helps highlight potential overreliance on specific vendors and raises questions about purchasing diversity or policy alignment.
 
-![Sales Employee Share Z-Score](charts/transaction_outlier.png)  
-📎 A single $972 transaction by David Kim stands out at over +2 standard deviations above the mean — flagged as a potential red flag based on z-score.
+---
+
+📎 **A single $972 transaction by David Kim** stands out at over +2 standard deviations above the mean — flagged as a potential red flag based on z-score.
 
 This chart shows all individual Office Supplies transactions in the Sales department, plotted by employee.
-    •    Gray dots represent standard transactions.
-    •    The red dot marks a transaction flagged as an outlier (z > 1.5).
-    •    Blue dashed lines show the mean and key standard deviation thresholds for context.
+
+- ⚪ Gray dots represent standard transactions  
+- 🔴 Red dot marks a transaction flagged as an outlier (z > 1.5)  
+- 🔵 Blue dashed lines show the mean and standard deviation thresholds
 
 This view helps uncover isolated spikes in spending that wouldn’t be caught through total summaries — offering a clear lens on potential misuse or exception-based activity.
 
-![Sales Employee Share Z-Score](charts/category_tiers.png)  
-📎 This heatmap shows how far each department’s category-level spend deviates from its expected benchmark — highlighting major over- or under-spending areas.
+---
 
-Each cell represents a department’s deviation (in percentage points) from its expected category spending tier:
-    •    🔴 Red cells indicate spending above expected levels.
-    •    🔵 Blue cells indicate spending below expectations.
-    •    ⚪ Neutral colors show spending roughly in line with expectations.
+📎 **This heatmap shows how far each department’s category-level spend deviates from its expected benchmark** — highlighting major over- or under-spending areas.
+
+Each cell represents a department’s deviation (in percentage points) from its expected category spending tier.
+
+- 🔴 Red cells indicate spending **above** expected levels  
+- 🔵 Blue cells indicate spending **below** expectations  
+- ⚪ Neutral colors show spending **in line** with expectations
 
 For example:
-    •    Sales overspent on Office Supplies by +28.3 points compared to what was expected.
-    •    Engineering underspent on Software by over 22 points.
+
+- 📈 Sales **overspent** on Office Supplies by **+28.3 points** compared to what was expected  
+- 📉 Engineering **underspent** on Software by **over 22 points**
 
 This visual quickly surfaces policy misalignment, budget anomalies, or misprioritized resources that would be missed in raw totals or standard breakdowns.
 
-⸻
+---
 
 📈 Key Insights
     •    ⚠️ Single Outlier Transaction: One $972 purchase = 40% of category spend
