@@ -239,8 +239,8 @@ Each cell represents a department’s deviation (in percentage points) from its 
 
 For example:
 
-- 📈 Sales **overspent** on Office Supplies by **+28.3 points** compared to what was expected  
-- 📉 Engineering **underspent** on Software by **over 22 points**
+- **Sales** spent **28.3 percentage points more** on Office Supplies than expected  
+- **Engineering** spent **22 points less** than expected on Software
 
 This visual quickly surfaces policy misalignment, budget anomalies, or misprioritized resources that would be missed in raw totals or standard breakdowns.
 
