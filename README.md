@@ -187,12 +187,14 @@ This supports smarter audits, tighter controls, and cleaner, more transparent bu
 ### 📊 Final Visuals and Insights
 
 ![Sales Employee Share Z-Score](charts/employee_spend.png)  
-📎 **David Kim accounts for over 40% of total Office Supplies spend** — flagged via z-score as a potential outlier, well above the expected average of ~16.7%.
+📎 **David Kim and Frank Wu were both flagged as outliers** in the Sales department’s Office Supplies spending based on z-scores.
 
 This bar chart compares each employee’s share of total Office Supplies spending within the Sales department.  
-The red dashed line represents the expected even share if spending were split equally among all employees.
+The red dashed line represents the expected even share if spending were split equally among all employees (~16.7%).
 
-- 🔵 Blue bars indicate within-normal-range spending  
+- 🟠 **David Kim** had a z-score > **+1.0**, marking him as a high-end outlier 
+- 🟠 **Frank Wu** had a z-score < **-1.0**, marking him as a low-end outlier  
+- 🔵 Blue bars indicate spending within the normal range
 - 🟠 Orange bars mark employees whose spending was flagged as an outlier (z-score > 1.0 or < -1.0)
 
 This view helps surface fairness issues and possible budget misuse that wouldn’t be clear from totals alone.
