@@ -212,7 +212,7 @@ This visualization helps highlight potential overreliance on specific vendors an
 
 ---
 
-![Transaction Outlier Chart](charts/transaction_outlier.png)  
+![Transaction Outlier Chart](charts/transactions.png)  
 📎 **A single $972 transaction by David Kim** stands out at over +2 standard deviations above the mean — flagged as a potential red flag based on z-score.
 
 This chart shows all individual Office Supplies transactions in the Sales department, plotted by employee.
