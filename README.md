@@ -202,13 +202,14 @@ This view helps surface fairness issues and possible budget misuse that wouldn�
 ---
 
 ![Vendor Breakdown Pie Chart](charts/vendor_breakdown.png)  
-📎 **Over 60% of all Office Supplies purchases in Sales went to Staples**, suggesting a heavy vendor concentration.
 
-This pie chart breaks down which vendors received Office Supplies spending from the Sales department.
+📎 Over 60% of all Office Supplies purchases in Sales went to Staples — flagged as a potential outlier based on vendor z-score > 1.5.
 
-- 🏪 A dominant share went to **Staples (60.6%)**  
-- 📦 Amazon and Office Depot split most of the remaining spend  
-- ❓ A smaller portion (4.4%) went to **Hilton** — an unusual entry for this category
+This pie chart breaks down which vendors received Office Supplies spending from the Sales department:
+
+- 🏪 Staples received a dominant 60.6% share, exceeding the 1.5 z-score threshold and suggesting possible overreliance.
+- 📦 Amazon and Office Depot split most of the remaining spend in more typical proportions.
+- ❓ Hilton received 4.4% of spend — an unusual vendor for Office Supplies.
 
 This visualization helps highlight potential overreliance on specific vendors and raises questions about purchasing diversity or policy alignment.
 
