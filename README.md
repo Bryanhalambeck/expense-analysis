@@ -335,8 +335,8 @@ If I were continuing this analysis as part of a full audit, I would:
 
 ---
 
-### 📂 **Repository Structure**
-
+### 📂 Repository Structure
+```plaintext
 project-folder/
 │
 ├── charts/
@@ -361,6 +361,7 @@ project-folder/
 │
 ├── requirements.txt
 └── README.md
+```
 
 ---
 
