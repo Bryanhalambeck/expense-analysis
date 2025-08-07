@@ -2,10 +2,19 @@
 
 ---
 
-### 📌 Executive Summary  
-This project analyzes expense data for a small tech and professional services firm to uncover fairness concerns, policy violations, vendor risks, and unusual spending patterns.
-It combines a company-wide benchmarking framework with a detailed analysis of the Sales department’s Office Supplies spending — surfacing red flags through z-score outlier detection, category-level benchmarking, and targeted visual analysis.
-The /exploration/ folder contains additional scripts that extend this process to the entire company, while the finalized focus area demonstrates how the approach can deliver clear, actionable insights in a single high-priority domain.
+## 📌 Executive Summary
+
+This project analyzes expense data for a small tech and professional services firm to uncover fairness concerns, policy violations, vendor risks, and unusual spending patterns.  
+
+It delivers two fully finalized analyses:  
+- **📊 Company-Wide Category Benchmarking** – A complete cross-department comparison showing where spending in categories like Travel, Meals, and Office Supplies falls above or below expected levels, visualized through a custom benchmark heatmap.  
+- **🧾 Detailed Analysis: Sales – Office Supplies** – A full breakdown of one flagged department-category pair, including z-score outlier detection for employees and vendors, timing checks, vendor concentration analysis, and transaction-level anomaly detection.  
+
+These two analyses are complete, visualized, and explained in the README, showing the end-to-end workflow from raw data to actionable insight.  
+
+The `/exploration/` folder contains additional scripts that extend this risk-detection approach to the entire company. These are not finalized into README visuals or write-ups, but they demonstrate how the project could scale to a full-company audit — applying the same investigative principles through other methods, such as policy violation checks, vendor reliance analysis, same-day purchase detection, and monthly trend reviews.  
+
+In short, the finalized pieces show **how a full, polished analysis looks**, while the exploratory scripts show **how the process could be expanded across all departments and categories**.
 
 ---
 
