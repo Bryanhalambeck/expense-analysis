@@ -277,7 +277,7 @@ These two analyses are fully complete, visualized, and documented in this README
 
 ---
 
-### 🧪 **Exploratory Scripts (Logic Built, But Not Fully Finalized)**  
+### 🧪 **Exploratory Scripts (Not Finalized)**  
 
 In addition to the two finalized outputs, I built and tested a range of company-wide supporting tools that reflect my full analytical process.  
 
@@ -296,45 +296,46 @@ These are housed in the `exploration.py` file and demonstrate how I approached t
   Groups total company expenses by month to visualize spending cycles, spot seasonal spikes, or highlight unusual surges.  
 
 - 🔍 **Sales Department Category Scan**  
-  Provides a quick summary of how the Sales team spent across all categories except Office Supplies (which was covered in a full detailed analysis). Flags any timing issues (including weekend transactions), outliers, or potential policy concerns.  
+  Provides a quick summary of how the Sales team spent across all categories except Office Supplies (which was covered in a full detailed analysis). Flags all timing issues and outliers.
 
 📝 **Note:** These exploratory scripts were not fully polished into final charts or visuals in the README, nor were they fully developed and documented like the finalized category heatmap and Sales Office Supplies analysis. However, they reflect the complete analytical workflow I would follow to scale this project — providing clear examples of how I would extend the process across all departments and any category flagged for review.  
 
-These scripts helped me cover the full scope of my assigned goal, and ensured I had logic in place to surface issues across departments — even if they weren’t all polished for presentation.  
+These scripts helped me cover the full scope of my assigned goal and ensured I could identify issues across departments — even if they weren’t all polished for presentation.
+
+📁 See all supporting analysis in /exploration/
 
 ---
 
 ### 📌 **What I’d Do If This Were a Full Audit**  
 
-If I were continuing this analysis as part of a full audit or quarterly review, I would:  
+If I were continuing this analysis as part of a full audit, I would:  
 - ✅ Conduct full, detailed analyses — like the Sales–Office Supplies example — for every department-category combination in the heatmap that shows a deviation large enough to warrant deeper investigation (e.g. +20% or –15% or more from benchmark expectations).  
 - ✅ Create brief department overviews for each team (like I did for Sales) to summarize spending behavior across categories.  
 - ✅ Finalize each company-wide script by converting it into a clear visual summary and polished, executive-ready output.  
 
 ---
 
-### 🧠 **Why I Stopped Here**  
+### 🔍 **Project Summary**
 
-We finalized both the heatmap and the Sales–Office Supplies analysis, each with visualizations and full methodology explanations included in the README. The additional scripts in `exploration.py` show how this same process could be scaled across the full company. While I chose to finalize only the heatmap and Sales–Office Supplies for the README, these tools demonstrate a complete analytical approach and could be expanded to audit all departments.  
+- **Department Focus (Finalized Analysis):** Sales  
+- **Category Analyzed (Finalized Analysis):** Office Supplies  
 
-📁 See all supporting analysis in /exploration/ — these represent thoughtful extensions of the core project, not abandoned work.
+- **Company-Wide Explorations** *(in `/exploration/`)*:  
+  - Policy violation checks  
+  - Vendor concentration & single-use vendor identification  
+  - Same-day vendor repeat detection  
+  - Monthly spending trend visualization  
+  - Sales department category scan (non–Office Supplies)  
 
-⸻
+- **Dataset:** Internal transactions including:  
+  `date`, `department`, `category`, `employee`, `vendor`, `amount`  
 
-🔍 Project Summary
-	•	Department Focus (Finalized Deep Dive): Sales
-	•	Category Analyzed (Finalized Deep Dive): Office Supplies
-	•	Company-Wide Exploration Topics (in /exploration/):
- • Meals and Travel policy checks
- • Vendor concentration & repeat use
- • Same-day transaction detection
- • Monthly trend visualization
-	•	Dataset: Internal transactions with fields date, id, employee, vendor, amount, category, department
-	•	Tools Used: Python, Pandas, DuckDB, Seaborn, Matplotlib, Z-score analysis, Custom benchmarking
- 
- ⸻
+- **Tools & Methods:**  
+  Python • Pandas • DuckDB • Seaborn • Matplotlib • Z-score analysis • Custom category benchmarking
 
- 📂 Repository Structure
+---
+
+### 📂 **Repository Structure**
 
 project-folder/
 │
@@ -360,26 +361,25 @@ project-folder/
 │
 ├── requirements.txt
 └── README.md
+ 
+---
 
- ⸻
+### 🧠 **Skills Demonstrated**
 
-🧠 Skills Demonstrated
-    •    Real-world anomaly detection using z-scores
-    •    Custom business benchmarking logic
-    •    Transaction filtering and aggregation
-    •    Visual storytelling with charts
-    •    SQL-style querying with DuckDB in Python
-    •    Clear, structured communication of insights
+- Real-world anomaly detection using **z-scores**  
+- Building **custom business benchmarking** logic for category comparisons  
+- Filtering, grouping, and aggregating transaction data for insight discovery  
+- **Visual storytelling** through clear, actionable charts  
+- Using **DuckDB in Python** for fast, SQL-style querying  
+- Communicating findings in a **clear, structured, and business-friendly** format
 
-⸻
+---
 
-🎥 Loom Video
+### 🎥 **Loom Video**  
+Watch the walk-through → [https://loom.com/your-link-here](https://loom.com/your-link-here)  
 
-Watch the walk-through → (https://loom.com/your-link-here)
+---
 
-⸻
-
-✍️ Author
-
-Bryan H.
-Aspiring Data Analyst focused on business intelligence, expense optimization, and operational insight.
+### ✍️ **Author**  
+**Bryan H.**  
+Aspiring Data Analyst focused on business intelligence, expense optimization, and operational insight.  
