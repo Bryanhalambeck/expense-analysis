@@ -266,13 +266,12 @@ To accomplish this, I built multiple scripts and analysis layers, but intentiona
 ---
 
 ### ✅ **Finalized Analyses in This README**
+
 - **📊 Category Benchmark Heatmap**  
-  A full cross-department analysis showing which teams are overspending or underspending in each category based on custom benchmark tiers.  
-  → This gave a clear, visual starting point to identify departments or categories that may need deeper review.  
+  Cross-department view of overspending/underspending vs. benchmark tiers.
 
 - **🧾 Detailed Analysis: Sales – Office Supplies**  
-  A targeted breakdown of one flagged department-category pair.  
-  → Included z-score outlier detection for employees and vendors, weekend/holiday timing checks, vendor concentration, and transaction-level anomalies.  
+  Investigation of one flagged department-category pair.
 
 These two analyses are fully complete, visualized, and documented in this README — showcasing the end-to-end workflow I developed.  
 
