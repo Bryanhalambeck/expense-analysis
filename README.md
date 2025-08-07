@@ -281,7 +281,7 @@ These two analyses are fully complete, visualized, and documented in this README
 
 In addition to the two finalized outputs, I built and tested a range of company-wide supporting tools that reflect my full analytical process.  
 
-These are housed in the `exploration.py` file and demonstrate how I approached the entire company, as originally scoped. The scripts below show the breadth of my process and how I would scale this approach if completing the full audit:  
+These are housed in the `exploration.py` file and demonstrate how I approached the entire company. The scripts below show the breadth of my process and how I would scale this approach if completing the full audit:  
 
 - 🚨 **Policy Violation Check**  
   Scans all transactions across the company and flags any that exceed category-specific spending limits.  
