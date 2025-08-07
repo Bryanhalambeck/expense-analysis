@@ -1,32 +1,29 @@
-📊 SMART EXPENSE INSIGHTS: DETECTING OUTLIERS, POLICY FLAGS & BENCHMARK DEVIATIONS IN A SMALL COMPANY BUDGET
+## 📊 Expense Insights & Risk Detection for a Small Tech & Services Firm 
 
-⸻
+---
 
-📌 Executive Summary
+### 📌 Executive Summary  
+This project analyzes expense data for a small firm to detect fairness issues, policy violations, and unusual spending patterns.  
+It combines company-wide benchmarking with a detailed analysis of the Sales department’s Office Supplies spend — surfacing red flags through z-score analysis, visual storytelling, and custom business logic.  
+Broader scripts in the `/exploration/` folder reflect a full-company view, while the finalized focus area shows how to drive actionable insights in one targeted domain.  
 
-This project analyzes expense data for a small firm to detect fairness issues, policy violations, and unusual spending patterns. It combines company-wide benchmarking with a deep dive into the Sales department’s Office Supplies spend — surfacing red flags through z-score analysis, visual storytelling, and custom business logic. Broader scripts in the /exploration/ folder reflect a full-company view, while the finalized focus area shows how to drive actionable insights in one targeted domain.
+---
 
-⸻
+### 👤 Example Company Description  
+The company is a small, specialized tech and professional services firm run by a lean team of six core employees. This tight-knit group handles custom software development, IT support, marketing campaigns, sales operations, and HR tasks for a range of clients across industries.  
 
-👤 Example Company Description
+Because the company is small and agile, each employee wears multiple hats — working across departments to manage different projects, budgets, and client needs. As a result, all six employees are expected to share spending responsibilities equally — meaning their expenses should generally be balanced across departments and categories.  
 
-The company is a small, specialized tech and professional services firm run by a lean team of six core employees. This tight-knit group handles custom software development, IT support, marketing campaigns, sales operations, and HR tasks for a range of clients across industries.
+The organization maintains clear expense policies to keep spending in check while balancing remote and in-office work, plus regular travel for client meetings, conferences, and training.  
 
-Because the company is small and agile, each employee wears multiple hats — working across departments to manage different projects, budgets, and client needs. As a result, all six employees are expected to share spending responsibilities equally — meaning their expenses should generally be balanced across departments and categories.
+---
 
-The organization maintains clear expense policies to keep spending in check while balancing remote and in-office work, plus regular travel for client meetings, conferences, and training.
+### 💼 Business Scenario: Expense Review for Finance  
+You’re the sole data analyst supporting this small team. The finance lead has asked you to analyze the company’s expense records from the past year to spot early red flags, policy violations, or cost-saving opportunities.  
 
-⸻
+You’ve been given a raw expense file that includes details like date, department, category, employee, vendor, and amount — all linked back to the same six employees who spend across every department.  
 
-💼 Business Scenario: Expense Review for Finance
-
-You’re the sole data analyst supporting this small team. The finance lead has asked you to analyze the company’s expense records from the past year to spot early red flags, policy violations, or cost-saving opportunities.
-
-You’ve been given a raw expense file that includes details like date, department, category, employee, vendor, and amount — all linked back to the same six employees who spend across every department.
-
-Your goal is to turn this data into clear, actionable insights that help the team spend wisely and stick to budget as they grow — while flagging any spending patterns that look significantly above or below the fair share expected for each employee.
-
-⸻
+Your goal is to turn this data into clear, actionable insights that help the team spend wisely and stick to budget as they grow — while flagging any spending patterns that look significantly above or below the fair share expected for each employee.  
 
 ### 📋 Example Company's Expense Policy Reference
 
