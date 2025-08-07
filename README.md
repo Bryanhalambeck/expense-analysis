@@ -3,9 +3,9 @@
 ---
 
 ### 📌 Executive Summary  
-This project analyzes expense data for a small firm to detect fairness issues, policy violations, and unusual spending patterns.  
-It combines company-wide benchmarking with a detailed analysis of the Sales department’s Office Supplies spend — surfacing red flags through z-score analysis, visual storytelling, and custom business logic.  
-Broader scripts in the `/exploration/` folder reflect a full-company view, while the finalized focus area shows how to drive actionable insights in one targeted domain.  
+This project analyzes expense data for a small firm to detect fairness issues, policy violations, and unusual spending patterns.
+It combines company-wide benchmarking with a detailed analysis of the Sales department’s Office Supplies spend — surfacing red flags through z-score analysis, visual storytelling, and custom business logic.
+Broader scripts in the /exploration/ folder reflect a full-company view, while the finalized focus area shows how to drive actionable insights in one targeted domain. 
 
 ---
 
