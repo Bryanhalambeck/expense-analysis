@@ -259,7 +259,7 @@ This visual quickly surfaces policy misalignment, budget anomalies, or mispriori
 🧭 **Project Scope**  
 This project was designed to address a real-world business goal:  
 
-> “Surface fairness concerns, policy violations, vendor risks, and budget misalignment — and deliver clear, visual insights that help leadership make smarter financial decisions.”
+> “As the sole data analyst supporting a small team, my task was to analyze the company’s past-year expense records to surface fairness concerns, policy violations, vendor risks, cost-saving opportunities, and budget misalignment — and to deliver clear, visual insights that help leadership make smarter financial decisions as the company grows.”
 
 To accomplish this, I built multiple scripts and analysis layers, but intentionally finalized and documented only two core pieces of the pipeline:  
 
