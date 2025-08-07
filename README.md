@@ -361,7 +361,7 @@ project-folder/
 │
 ├── requirements.txt
 └── README.md
- 
+
 ---
 
 ### 🧠 **Skills Demonstrated**
