@@ -256,16 +256,67 @@ This visual quickly surfaces policy misalignment, budget anomalies, or mispriori
 
 ⸻
 
-🧭 Project Scope & Exploration
+🧭 **Project Scope**  
+This project was designed to address a real-world business goal:  
 
-While the final deep dive focuses on Sales department Office Supplies, this project was designed to evaluate company-wide expense behavior.
+> “Surface fairness concerns, policy violations, vendor risks, and budget misalignment — and deliver clear, visual insights that help leadership make smarter financial decisions.”
 
-The /exploration/ folder contains a broader set of scripts that:
-	•	Flag policy violations across all departments
-	•	Detect vendor concentration and same-day spend patterns
-	•	Surface timing trends, category gaps, and monthly fluctuations
+To accomplish this, I built multiple scripts and analysis layers, but intentionally finalized and documented only two core pieces of the pipeline:  
 
-These exploratory scripts reflect my full analytical process. They extend the project beyond just Sales — showing how I approached company-wide risk, fairness, and policy alignment — even if only one segment was fully finalized due to time.
+---
+
+### ✅ **Finalized Analyses in This README**
+- **📊 Category Benchmark Heatmap**  
+  A full cross-department analysis showing which teams are overspending or underspending in each category based on custom benchmark tiers.  
+  → This gave a clear, visual starting point to identify departments or categories that may need deeper review.  
+
+- **🧾 Detailed Analysis: Sales – Office Supplies**  
+  A targeted breakdown of one flagged department-category pair.  
+  → Included z-score outlier detection for employees and vendors, weekend/holiday timing checks, vendor concentration, and transaction-level anomalies.  
+
+These two analyses are fully complete, visualized, and documented in this README — showcasing the end-to-end workflow I developed.  
+
+---
+
+### 🧪 **Exploratory Scripts (Logic Built, But Not Fully Finalized)**  
+
+In addition to the two finalized outputs, I built and tested a range of company-wide supporting tools that reflect my full analytical process.  
+
+These are housed in the `exploration.py` file and demonstrate how I approached the entire company, as originally scoped. The scripts below show the breadth of my process and how I would scale this approach if completing the full audit:  
+
+- 🚨 **Policy Violation Check**  
+  Scans all transactions across the company and flags any that exceed category-specific spending limits.  
+
+- 🧾 **Company-Wide Vendor Risk Analysis**  
+  Analyzes how much spend flows to each vendor, flags over reliance and identifies single-use vendors.  
+
+- 🔁 **Same-Day Vendor Repeats**  
+  Checks for cases where an employee made multiple purchases from the same vendor on the same day — which could signal batching, duplicates, or policy issues.  
+
+- 📈 **Monthly Spend Trends**  
+  Groups total company expenses by month to visualize spending cycles, spot seasonal spikes, or highlight unusual surges.  
+
+- 🔍 **Sales Department Category Scan**  
+  Provides a quick summary of how the Sales team spent across all categories except Office Supplies (which was covered in a full detailed analysis). Flags any timing issues (including weekend transactions), outliers, or potential policy concerns.  
+
+📝 **Note:** These exploratory scripts were not fully polished into final charts or visuals in the README, nor were they fully developed and documented like the finalized category heatmap and Sales Office Supplies analysis. However, they reflect the complete analytical workflow I would follow to scale this project — providing clear examples of how I would extend the process across all departments and any category flagged for review.  
+
+These scripts helped me cover the full scope of my assigned goal, and ensured I had logic in place to surface issues across departments — even if they weren’t all polished for presentation.  
+
+---
+
+### 📌 **What I’d Do If This Were a Full Audit**  
+
+If I were continuing this analysis as part of a full audit or quarterly review, I would:  
+- ✅ Conduct full, detailed analyses — like the Sales–Office Supplies example — for every department-category combination in the heatmap that shows a deviation large enough to warrant deeper investigation (e.g. +20% or –15% or more from benchmark expectations).  
+- ✅ Create brief department overviews for each team (like I did for Sales) to summarize spending behavior across categories.  
+- ✅ Finalize each company-wide script by converting it into a clear visual summary and polished, executive-ready output.  
+
+---
+
+### 🧠 **Why I Stopped Here**  
+
+We finalized both the heatmap and the Sales–Office Supplies analysis, each with visualizations and full methodology explanations included in the README. The additional scripts in `exploration.py` show how this same process could be scaled across the full company. While I chose to finalize only the heatmap and Sales–Office Supplies for the README, these tools demonstrate a complete analytical approach and could be expanded to audit all departments.  
 
 📁 See all supporting analysis in /exploration/ — these represent thoughtful extensions of the core project, not abandoned work.
 
