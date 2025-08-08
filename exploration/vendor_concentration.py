@@ -26,7 +26,7 @@ from scipy.stats import zscore
 # ------------------------------------------------------------
 # 1️⃣ Load and Clean Data
 # ------------------------------------------------------------
-df = pd.read_csv("Untitledspreadsheet72.csv")
+df = pd.read_csv("data/SmallCompany.csv")
 df['date'] = pd.to_datetime(df['date'], errors='coerce')
 df['vendor'] = df['vendor'].fillna("Unknown")
 
