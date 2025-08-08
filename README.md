@@ -72,30 +72,28 @@ This file serves as the raw input for all analysis in this project. It was desig
 
 ### 📊 Category-Level Benchmarking (All Departments)
 
-Comparing each department’s spending behavior to what’s expected.
+This analysis compares each department’s spending behavior to what’s expected across categories (Travel, Meals, Office Supplies, Training, etc.), then visualizes differences in a heatmap.
 
-This section evaluates how each department’s spending behavior aligns with expectations across categories like Travel, Meals, Office Supplies, Training, and more.
-
-To do this, I created a custom benchmarking system that:
-
+**At a glance:** 
 - Calculates what % of each department’s budget goes to each category  
 - Compares that to what’s typical across all departments  
 - Defines expected spend levels (Low, Medium-Low, Medium, Medium-High, High) for each department and category  
-- Visualizes how far off each department is from those expectations using a color-coded heatmap  
+- Visualizes how far off each department is from those expectations using a color-coded heatmap
 
 ---
 
-### ✅ Step-by-Step Benchmarking Process
+<details>
+  <summary><strong>✅ Step-by-Step Benchmarking Process (click to expand)</strong></summary>
 
-**% of Department Spend by Category**  
+1. **% of Department Spend by Category**  
 Percent = (Category Spend / Total Dept Spend) × 100  
 → This gives a normalized view of each department’s spending priorities.
 
-**Deviation from Category Average**  
+2. **Deviation from Category Average**  
 Deviation = (This Dept’s % Spend) – (Category Average % Spend)  
 → This tells us how unusually high or low a department is spending in each area.
 
-**Tier Midpoints from Percentiles**  
+3. **Tier Midpoints from Percentiles**  
 I split all deviation values into percentile-based tiers:  
 - Bottom 33% → Low  
 - Middle 33% → Medium  
@@ -105,13 +103,15 @@ In-between midpoints:
 - Medium–Low = average of Low and Medium  
 - Medium–High = average of Medium and High  
 
-**Manual Tier Expectations**  
+4. **Manual Tier Expectations**  
 Based on business context, I manually defined expected tier behavior for each department/category pair.  
 📝 *Note: Full tier assignments are available in the code for transparency. These were based on common sense assumptions for a small team with shared spending responsibilities.*
 
-**Deviation from Expected Benchmark**  
+5. **Deviation from Expected Benchmark**  
 Final Score = Actual Deviation – Expected Tier Midpoint  
-→ This reflects how far each department is from where they should be.
+→ This reflects how far each department is from where they should be. 
+
+</details>
 
 ---
 
@@ -126,14 +126,11 @@ The resulting heatmap offers:
 
 ---
 
-### 🧾 Sales Department Deep Dive – Office Supplies
+### 🧾 Detailed Analysis: Sales – Office Supplies  
 
-Zooming in on how the Sales department spends on Office Supplies — by employee, vendor, timing, and transaction detail.
+This analysis examines the Sales department’s Office Supplies spending by employee, vendor, timing, and transaction detail to uncover patterns and potential red flags not visible from totals alone.  
 
-While the broader project explores company-wide behavior, this finalized deep dive focuses on a single department-category combo to surface red flags that wouldn’t be obvious from totals alone.
-
-To do this, I built a focused workflow that:
-
+**At a glance:** 
 - Flags employees or vendors with unusually high spend using z-scores  
 - Tracks monthly spend trends to spot spikes or seasonal patterns  
 - Detects purchases on weekends or U.S. holidays  
@@ -142,39 +139,43 @@ To do this, I built a focused workflow that:
 
 ---
 
-### ✅ Step-by-Step Analysis Workflow
+<details>
+  <summary><strong>✅ Step-by-Step Analysis Workflow (click to expand)</strong>
+  </summary>
 
-**Targeted Subset**  
+
+1. **Targeted Subset**  
 Focus only on Sales department’s Office Supplies transactions.
 
-**Employee-Level Analysis**  
+2. **Employee-Level Analysis**  
 Sum each employee’s spend in this category.  
 → Flag z-scores > 1.0 to catch above-average behavior.
 
-**Vendor-Level Analysis**  
+3. **Vendor-Level Analysis**  
 Sum each vendor’s spend in this category.  
 → Flag z-scores > 1.5 to catch overreliance.
 
-**Monthly Spend Trends**  
+4. *Monthly Spend Trends**  
 Group spending by month to detect seasonal or unusual spikes.
 
-**Transaction-Level Outliers**  
+5. **Transaction-Level Outliers**  
 Calculate z-scores for each individual transaction.  
 → Flag z > 1.5 to catch standout anomalies.  
 📝 *Note: Z-score thresholds vary slightly to avoid false positives.*
 
-**Timing Flags**  
+6. **Timing Flags**  
 Flag any purchases made on weekends or U.S. holidays.
 
-**Employee % Share Chart**  
-Show each employee’s % of total category spend.  
+7. how each employee’s % of total category spend.  
 → Compare against a fair split (≈16.7%) to spot imbalances.
 
-**Vendor Breakdown Pie Chart**  
+8. **Vendor Breakdown Pie Chart**  
 Visualize vendor concentration — who got the most business?
 
-**Transaction Strip Plot**  
+9. **Transaction Strip Plot**  
 Show every transaction by employee to spot extremes or clusters.
+
+</details>
 
 ---
 
