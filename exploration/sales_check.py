@@ -22,7 +22,7 @@ from scipy.stats import zscore
 # -----------------------------------------------------
 # 1️⃣ Load Data and Create Flags
 # -----------------------------------------------------
-df = pd.read_csv("Untitledspreadsheet72.csv")
+df = pd.read_csv("data/SmallCompany.csv")
 df['date'] = pd.to_datetime(df['date'], errors='coerce')
 df['day_of_week'] = df['date'].dt.dayofweek
 df['is_weekend'] = df['day_of_week'] >= 5
