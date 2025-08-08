@@ -253,15 +253,15 @@ This visual quickly surfaces policy misalignment, budget anomalies, or mispriori
 
 ---
 
-📈 Key Insights
-    •    ⚠️ Single Outlier Transaction: One $972 purchase = 40% of category spend
-    •    👤 Employee-Level Imbalance: David Kim far above team average
-    •    🏪 Vendor Concentration: Staples = 60% of spend, flagged as outlier
-    •    📅 Timing Irregularities: Weekend + holiday purchases
-    •    📊 Benchmark Deviation: Sales overspent Office Supplies by +28.3%
-📦 Expense Analysis – Small Company Budget Review
+### 📈 Key Insights  
 
-⸻
+- ⚠️ **Single Outlier Transaction:** One $972 purchase accounted for 40% of the category’s total spend.  
+- 👤 **Employee-Level Imbalance:** David Kim spent far above the team average.  
+- 🏪 **Vendor Concentration:** Staples represented 60% of category spend and was flagged as an outlier.  
+- 📅 **Timing Irregularities:** Purchases occurred on both weekends and U.S. holidays.  
+- 📊 **Benchmark Deviation:** Sales overspent Office Supplies by **+28.3%** compared to the expected benchmark.  
+
+---
 
 🧭 **Project Scope**  
 This project was designed to address a real-world business goal:  
