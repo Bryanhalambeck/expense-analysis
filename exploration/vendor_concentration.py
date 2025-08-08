@@ -2,21 +2,7 @@
 # 📊 vendor_concentration.py
 # ------------------------------------------------------------
 """
-This script checks for vendor concentration risk by analyzing how much of the company’s total spend is flowing to each vendor — and flags cases that may warrant scrutiny.
-
-📘 How it works:
-	•	We calculate total spend and number of transactions for each vendor.
-	•	Then, we compute:
-	•	Percent of total spend (to flag overly dominant vendors)
-	•	Z-score (to identify statistical outliers)
-	•	Single-use vendors (which may indicate inconsistent procurement practices)
-	•	Vendors are flagged as:
-	•	🔴 Hard High: 30%+ of total spend
-	•	⚠️ Z Outlier: Statistically unusual spending (z > 1.96)
-	•	🟡 Single-Use Vendor: Only one transaction
-	•	✅ OK: No immediate red flag
-
-This analysis helps detect overreliance, potential risk exposure, and opportunities for vendor consolidation.
+Analyzes how much spend flows to each vendor, flags over reliance and identifies single-use vendors.
 """
 
 import pandas as pd
