@@ -1,19 +1,10 @@
-# ============================================
+# ============================================================
 # 📊 category_benchmarks.py
-# --------------------------------------------
+# ------------------------------------------------------------
 """
-This script analyzes departmental spending by category,
-calculates deviation from benchmark expectations using 
-custom tier midpoints, and visualizes the results in a heatmap.
-
-📘 How it works:
-- First, we calculate how much of each department's budget is spent on categories like Meals, Travel, etc.
-- Then, we compare that to what's typical for each category across all departments.
-- We also define what each department *should* be spending (e.g. low, medium-low, medium, medium-high, high).
-- Finally, we check how far off each department is from that expectation — and show the results in a color-coded chart.
-
-This helps spot over/under-spending behavior, highlight misalignments, and guide budget decisions across teams.
-
+Generates a category-level departmental benchmarking heatmap
+to identify over/under-spending vs. custom tier expectations.
+See README.md for full methodology.
 """
 
 import os
