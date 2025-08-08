@@ -2,14 +2,7 @@
 # 📊 same_day_vendor.py
 # ------------------------------------------------------------
 """
-This script flags repeat transactions with the same vendor on the same day by a single employee — which can signal batching, duplicate purchases, or policy issues.
-
-📘 How it works:
-    • We group expenses by employee, vendor, and date.
-    • Any combination with more than one transaction on the same day is flagged.
-    • For each match, we show the number of transactions and total amount spent.
-
-This check helps spot possible oversights, double charges, or non-standard purchasing behavior — useful for tightening vendor and employee-level controls.
+Checks for cases where an employee made multiple purchases from the same vendor on the same day — which could signal batching, duplicates, or policy issues. 
 """
 
 import pandas as pd
