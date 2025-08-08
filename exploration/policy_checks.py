@@ -16,7 +16,7 @@ import pandas as pd
 # -----------------------------------------------------
 # 1️⃣ Load Expense Data
 # -----------------------------------------------------
-df = pd.read_csv("Untitledspreadsheet72.csv")
+df = pd.read_csv("data/SmallCompany.csv")
 
 # -----------------------------------------------------
 # 2️⃣ Meals Policy: Max $55 per meal per employee
