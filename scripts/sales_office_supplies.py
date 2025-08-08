@@ -1,19 +1,11 @@
 # ============================================================
-# 📊 sales_office_supplies.py
+# 🧾 sales_office_supplies.py
 # ------------------------------------------------------------
 """
-This script dives into Office Supplies spending within the Sales department
-of a small company. It helps flag potential issues like outlier employees,
-overused vendors, outlier transactions, or unusual timing.
-
-📘 How it works:
-- We zoom in on all Office Supplies expenses tied to the Sales team.
-- We highlight outliers in employee and vendor spend using z-scores.
-- We break down monthly trends and spot transactions on weekends/holidays.
-- We visualize spending splits with bar charts, pie charts, and strip plots.
-
-The goal is to surface potential overspending or fairness issues —
-and give a clear, visual window into how this category is being used.
+Analyzes Sales department Office Supplies spending to flag 
+outliers, vendor overuse, unusual timing, and spending imbalances.
+Uses z-scores, trend checks, and visuals for clear insights.
+See README.md for full details.
 """
 
 # ---------------------------
