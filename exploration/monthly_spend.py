@@ -18,7 +18,7 @@ import matplotlib.pyplot as plt
 # ------------------------------------------------------------
 # 1️⃣ Load and Prepare Expense Data
 # ------------------------------------------------------------
-df = pd.read_csv("Untitledspreadsheet72.csv")
+df = pd.read_csv("data/SmallCompany.csv")
 df['date'] = pd.to_datetime(df['date'], errors='coerce')  # Ensure datetime format
 
 # ------------------------------------------------------------
