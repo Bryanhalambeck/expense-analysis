@@ -4,7 +4,7 @@
 """
 Generates a category-level departmental benchmarking heatmap
 to identify over/under-spending vs. custom tier expectations.
-See README.md for full methodology.
+See README.md for full detaila.
 """
 
 import os
