@@ -14,6 +14,10 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+# -----------------------------
+# 🖼️ Function: Generate Benchmark Heatmap
+# -----------------------------
+
 def generate_benchmark_heatmap(pivot_table, output_path):
     """Generate and save a heatmap of deviations from expected benchmarks."""
     plt.figure(figsize=(10, 6))
