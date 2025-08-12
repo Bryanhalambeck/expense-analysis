@@ -7,12 +7,12 @@
 This project analyzes expense data for a small tech and professional services firm to uncover fairness concerns, policy violations, vendor risks, and unusual spending patterns.  
 
 It delivers two fully finalized analyses:  
-- **📊 Company-Wide Category Benchmarking** – A complete cross-department comparison showing where spending in categories like Travel, Meals, and Office Supplies falls above or below expected levels, visualized through a custom benchmark heatmap.  
-- **🧾 Detailed Analysis: Sales – Office Supplies** – A full breakdown of one flagged department-category pair, including z-score outlier detection for employees and vendors, timing checks, vendor concentration analysis, and transaction-level anomaly detection.  
+- **📊 Company-Wide Category Benchmarking** – A cross-department comparison showing where spending in department–category pairs falls above or below expected levels, visualized in a custom benchmark heatmap.  
+- **🧾 Detailed Analysis: Sales – Office Supplies** – A breakdown of one flagged department–category pair, including z-score outlier detection for employees and vendors, timing checks, vendor concentration analysis, and transaction-level anomaly detection.  
 
 These two analyses are complete, visualized, and explained in the README, showing the end-to-end workflow from raw data to actionable insight.  
 
-The `/exploration/` folder contains additional scripts that extend this risk-detection approach to the entire company. These are not finalized into README visuals or write-ups, but they demonstrate how the project could scale to a full-company audit — applying the same investigative principles through other methods, such as policy violation checks, vendor reliance analysis, same-day purchase detection, and monthly trend reviews.  
+The `/exploration/` folder contains additional scripts that extend this risk-detection approach to the entire company. These are not finalized into README visuals or write-ups, but they demonstrate how the project could scale to a full-company audit — applying the same investigative principles through other methods.
 
 In short, the finalized pieces show **how a full, polished analysis looks**, while the exploratory scripts show **how the process could be expanded across all departments and categories**.
 
@@ -50,7 +50,7 @@ Your goal is to turn this data into clear, actionable insights that help the tea
 
 📝 **Note:** All expense data is fictional and created for educational analysis only.
 
-This file contains 100 rows of fictional expense data from the small, specialized tech and professional services firm. Each row represents an individual transaction made by one of six core employees across various departments and categories.
+This file contains 100 rows of fictional expense data from the small tech and services firm. Each row represents an individual transaction made by one of six core employees across various departments and categories.
 
 #### 🔍 Columns:
 - **id** – Unique transaction ID  
@@ -72,7 +72,7 @@ This file serves as the raw input for all analysis in this project. It was desig
 
 ### 📊 Category-Level Benchmarking (All Departments)
 
-This analysis compares each department’s spending behavior to what’s expected across categories (Travel, Meals, Office Supplies, Training, etc.), then visualizes differences in a heatmap.
+This analysis compares each department’s spending behavior to what’s expected across categories (Travel, Meals, Office Supplies, Training, Sales), then visualizes differences in a heatmap.
 
 **At a glance:** 
 - Calculates what % of each department’s budget goes to each category  
@@ -135,7 +135,7 @@ This analysis examines the Sales department’s Office Supplies spending by empl
 - Tracks monthly spend trends to spot spikes or seasonal patterns  
 - Detects purchases on weekends or U.S. holidays  
 - Visualizes spending concentration by employee, vendor, and transaction  
-- Highlights individual outliers for deeper investigation  
+- Highlights outliers for deeper investigation  
 
 ---
 
@@ -155,7 +155,7 @@ Sum each employee’s spend in this category.
 Sum each vendor’s spend in this category.  
 → Flag z-scores > 1.5 to catch overreliance.
 
-4. *Monthly Spend Trends**  
+4. **Monthly Spend Trends**  
 Group spending by month to detect seasonal or unusual spikes.
 
 5. **Transaction-Level Outliers**  
@@ -166,13 +166,14 @@ Calculate z-scores for each individual transaction.
 6. **Timing Flags**  
 Flag any purchases made on weekends or U.S. holidays.
 
-7. how each employee’s % of total category spend.  
-→ Compare against a fair split (≈16.7%) to spot imbalances.
+7. **Employee Spend Share**  
+Calculate each employee’s percentage of the total category spend.  
+→ Compare against an equal-share benchmark (**~16.7%**) to identify imbalances.
 
 8. **Vendor Breakdown Pie Chart**  
-Visualize vendor concentration — who got the most business?
+Visualize vendor concentration.
 
-9. **Transaction Strip Plot**  
+10. **Transaction Strip Plot**  
 Show every transaction by employee to spot extremes or clusters.
 
 </details>
@@ -210,7 +211,7 @@ This view helps surface fairness issues and possible budget misuse that wouldn�
 
 ![Vendor Breakdown Pie Chart](charts/vendor_breakdown.png)  
 
-📎 Over 60% of all Office Supplies purchases in Sales went to Staples — flagged as a potential outlier based on vendor z-score > 1.5.
+📎 **Over 60% of all Office Supplies purchases in Sales went to Staples** — flagged as a potential outlier based on vendor z-score.
 
 This pie chart breaks down which vendors received Office Supplies spending from the Sales department:
 
@@ -227,9 +228,10 @@ This visualization helps highlight potential overreliance on specific vendors an
 
 This chart shows all individual Office Supplies transactions in the Sales department, plotted by employee.
 
-- ⚪ Gray dots represent standard transactions  
+- 🔘 Gray dots represent standard transactions  
 - 🔴 Red dot marks a transaction flagged as an outlier (z > 1.5)  
 - 🔵 Blue dashed lines show the mean and standard deviation thresholds
+- 🔴 **David Kim** had a z-score > **+1.5**, marking him as a high-end outlier 
 
 This view helps uncover isolated spikes in spending that wouldn’t be caught through total summaries — offering a clear lens on potential misuse or exception-based activity.
 
@@ -242,7 +244,7 @@ Each cell represents a department’s deviation (in percentage points) from its 
 
 - 🔴 Red cells indicate spending **above** expected levels  
 - 🔵 Blue cells indicate spending **below** expectations  
-- ⚪ Neutral colors show spending **in line** with expectations
+- 🔘 Neutral colors show spending **in line** with expectations
 
 For example:
 
