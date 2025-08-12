@@ -265,15 +265,6 @@ This visual quickly surfaces policy misalignment, budget anomalies, or mispriori
 
 ---
 
-🧭 **Project Scope**  
-This project was designed to address a real-world business goal:  
-
-> “As the sole data analyst supporting a small team, my task was to analyze the company’s past-year expense records to surface fairness concerns, policy violations, vendor risks, cost-saving opportunities, and budget misalignment — and to deliver clear, visual insights that help leadership make smarter financial decisions as the company grows.”
-
-To accomplish this, I built multiple scripts and analysis layers, but intentionally finalized and documented only two core pieces of the pipeline:  
-
----
-
 ### ✅ **Finalized Analyses in This README**
 
 - **📊 Category Benchmark Heatmap**  
@@ -290,7 +281,7 @@ These two analyses are fully complete, visualized, and documented in this README
 
 In addition to the two finalized outputs, I built and tested a range of company-wide supporting tools that reflect my full analytical process.  
 
-These are housed in the `exploration.py` file and demonstrate how I approached the entire company. The scripts below show the breadth of my process and how I would scale this approach if completing the full audit:  
+These exploratory scripts were not fully polished into final charts or visuals in the README, nor were they fully developed and documented like the finalized category heatmap and Sales Office Supplies analysis. However, they reflect the complete analytical workflow I would follow to scale this project — providing clear examples of how I would extend the process across all departments and any category flagged for review.   
 
 - 🚨 **Policy Violation Check**  
   Scans all transactions across the company and flags any that exceed category-specific spending limits.  
@@ -307,9 +298,7 @@ These are housed in the `exploration.py` file and demonstrate how I approached t
 - 🔍 **Sales Department Category Scan**  
   Provides a quick summary of how the Sales team spent across all categories except Office Supplies (which was covered in a full detailed analysis). Flags all timing issues and outliers.
 
-📝 **Note:** These exploratory scripts were not fully polished into final charts or visuals in the README, nor were they fully developed and documented like the finalized category heatmap and Sales Office Supplies analysis. However, they reflect the complete analytical workflow I would follow to scale this project — providing clear examples of how I would extend the process across all departments and any category flagged for review.  
-
-These scripts helped me cover the full scope of my assigned goal and ensured I could identify issues across departments — even if they weren’t all polished for presentation.
+These scripts helped me cover the full scope of my assigned goal and ensured I could identify issues across departments.
 
 📁 See all supporting analysis in /exploration/
 
@@ -318,7 +307,7 @@ These scripts helped me cover the full scope of my assigned goal and ensured I c
 ### 📌 **What I’d Do If This Were a Full Audit**  
 
 If I were continuing this analysis as part of a full audit, I would:  
-- ✅ Conduct full, detailed analyses — like the Sales–Office Supplies example — for every department-category combination in the heatmap that shows a deviation large enough to warrant deeper investigation (e.g. +20% or –15% or more from benchmark expectations).  
+- ✅ Conduct full, detailed analyses — like the Sales–Office Supplies example — for every department-category combination in the heatmap that shows a deviation large enough to warrant deeper investigation (e.g. +20% or –15% or more from benchmark expectations). 
 - ✅ Create brief department overviews for each team (like I did for Sales) to summarize spending behavior across categories.  
 - ✅ Finalize each company-wide script by converting it into a clear visual summary and polished, executive-ready output.  
 
@@ -326,8 +315,8 @@ If I were continuing this analysis as part of a full audit, I would:
 
 ### 🔍 **Project Summary**
 
-- **Department Focus (Finalized Analysis):** Sales  
-- **Category Analyzed (Finalized Analysis):** Office Supplies  
+- **Company-Wide Category Benchmarking** 
+- **Detailed Analysis: Sales – Office Supplies**
 
 - **Company-Wide Explorations** *(in `/exploration/`)*:  
   - Policy violation checks  
