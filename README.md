@@ -1,4 +1,4 @@
-## 📊 Expense Insights & Risk Detection for a Small Tech & Services Firm 
+## 📊 Expense Insights & Risk Detection for a Small Tech & Professional Services Firm 
 
 ---
 
