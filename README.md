@@ -34,6 +34,8 @@ You’ve been given a raw expense file that includes details like date, departme
 
 Your goal is to turn this data into clear, actionable insights that help the team spend wisely and stick to budget as they grow — while flagging any spending patterns that look significantly above or below the fair share expected for each employee.  
 
+---
+
 ### 📋 Example Company's Expense Policy Reference
 
 | **Category**        | **Policy Rule**                                                                 |
