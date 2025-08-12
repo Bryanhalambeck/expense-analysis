@@ -50,8 +50,6 @@ Your goal is to turn this data into clear, actionable insights that help the tea
 
 ### 📁 Data Source – `SmallCompany.csv`
 
-📝 **Note:** All expense data is fictional and created for educational analysis only.
-
 This file contains 100 rows of fictional expense data from the small tech and services firm. Each row represents an individual transaction made by one of six core employees across various departments and categories.
 
 #### 🔍 Columns:
@@ -264,18 +262,6 @@ This visual quickly surfaces policy misalignment, budget anomalies, or mispriori
 - 🏪 **Vendor Concentration:** Staples represented 60% of category spend and was flagged as an outlier.  
 - 📅 **Timing Irregularities:** Purchases occurred on both weekends and U.S. holidays.  
 - 📊 **Benchmark Deviation:** Sales overspent Office Supplies by **+28.3%** compared to the expected benchmark.  
-
----
-
-### ✅ **Finalized Analyses in This README**
-
-- **📊 Category Benchmark Heatmap**  
-  Cross-department view of overspending/underspending vs. benchmark tiers.
-
-- **🧾 Detailed Analysis: Sales – Office Supplies**  
-  Investigation of one flagged department-category pair.
-
-These two analyses are fully complete, visualized, and documented in this README — showcasing the end-to-end workflow I developed.  
 
 ---
 
