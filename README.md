@@ -298,13 +298,18 @@ This visual quickly surfaces policy misalignment, budget anomalies, or mispriori
 
 In addition to the two finalized outputs, I built and tested a range of company-wide supporting tools that reflect my full analytical process.  
 
+While most of these were coded and tested in /exploration/, one item — the Vendor–Category Mismatch Check — was identified as a useful future enhancement but was not implemented as a working script for this version of the project. It’s included here for completeness, as it would strengthen coverage in a full audit scenario.
+
 These exploratory scripts were not fully polished into final charts or visuals in the README, nor were they fully developed and documented like the finalized category heatmap and Sales Office Supplies analysis. However, they reflect the complete analytical workflow I would follow to scale this project — providing clear examples of how I would extend the process across all departments and any category flagged for review.   
 
 - 🚨 **Policy Violation Check**  
   Scans all transactions across the company and flags any that exceed category-specific spending limits.  
 
 - 🧾 **Company-Wide Vendor Risk Analysis**  
-  Analyzes how much spend flows to each vendor, flags over reliance and identifies single-use vendors.  
+  Analyzes how much spend flows to each vendor, flags over reliance and identifies single-use vendors.
+  
+-	🏷 **Vendor–Category Mismatch Check (planned)**
+Scans for unusual vendor–category pairings (e.g., a hotel coded under Office Supplies), helping flag possible misclassifications or policy compliance issues that may not appear in high-level budget deviation checks.
 
 - 🔁 **Same-Day Vendor Repeats**  
   Checks for cases where an employee made multiple purchases from the same vendor on the same day — which could signal batching, duplicates, or policy issues.  
@@ -326,7 +331,8 @@ These scripts helped me cover the full scope of my assigned goal and ensured I c
 If I were continuing this analysis as part of a full audit, I would:  
 - ✅ Conduct full, detailed analyses — like the Sales–Office Supplies example — for every department-category combination in the heatmap that shows a deviation large enough to warrant deeper investigation (e.g. +20% or –15% or more from benchmark expectations). 
 - ✅ Create brief department overviews for each team (like I did for Sales) to summarize spending behavior across categories.  
-- ✅ Finalize each company-wide script by converting it into a clear visual summary and polished, executive-ready output.  
+- ✅ Finalize each company-wide script by converting it into a clear visual summary and polished, executive-ready output.
+- ✅ Run a company-wide vendor–category mismatch audit to catch unusual pairings (e.g., a hotel vendor appearing in Office Supplies), helping flag possible misclassifications or policy compliance issues that may not appear in high-level budget deviation checks.
 
 ---
 
@@ -337,7 +343,8 @@ If I were continuing this analysis as part of a full audit, I would:
 
 - **Company-Wide Explorations** *(in `/exploration/`)*:  
   - Policy violation checks  
-  - Vendor concentration & single-use vendor identification  
+  - Vendor concentration & single-use vendor identification
+  - (Planned) Vendor–category mismatch check 
   - Same-day vendor repeat detection  
   - Monthly spending trend visualization  
   - Sales department category scan (non–Office Supplies)  
