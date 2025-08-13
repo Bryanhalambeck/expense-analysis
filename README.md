@@ -263,33 +263,32 @@ This visual quickly surfaces policy misalignment, budget anomalies, or mispriori
   - Frank Wu spent **well below**, indicating an imbalance in resource usage.
 - **Vendor Concentration Risk:** Over **60%** of category spend went to **Staples**, exceeding the 1.5 z-score threshold for vendor overreliance.  
 - **Unusual Vendor Use:** Hilton accounted for **4.4%** of Office Supplies spend — atypical for this category and worth reviewing for coding or policy compliance issues.  
-- **High-Value Transaction Alert:** A single **$972 purchase** by David Kim was more than **+2 standard deviations above the mean** and exceeded the $650 category approval threshold.
+- **High-Value Transaction Alert:** A single **$972 purchase** by David Kim was more than **+2 standard deviations above the mean**, exceeding the 1.5 z-score threshold for individual transactions.
 - **Weekend & Holiday Purchases:**  
   - 2024-10-26: Alice Johnson spent **$426.27** at Office Depot (Weekend).  
   - 2024-12-25: Ella Martinez spent **$318.37** at Amazon (U.S. Holiday).  
 
 ### Business Implications
 - **Fairness Concerns:** Imbalanced employee spending can create internal equity issues and suggests uneven budget access.  
-- **Operational Risk:** Heavy reliance on one vendor reduces bargaining power and can disrupt supply if that vendor is unavailable.  
-- **Policy Compliance Risk:** The $972 transaction appears to bypass category-specific approval limits, which may indicate a breakdown in controls.  
+- **Operational Risk:** Heavy reliance on one vendor reduces bargaining power and can disrupt supply if that vendor is unavailable.   
 - **Timing Risk:** Weekend and holiday transactions may bypass normal oversight, increasing the chance of non-compliant or fraudulent purchases.  
 - **Data Integrity:** Unusual vendor assignments (e.g., Hilton for Office Supplies) may signal misclassified expenses or potential misuse.
 
 ### Recommended Next Steps
-1. **Policy Review & Enforcement**
-   - Audit the $972 transaction and any other purchases exceeding approval thresholds.
-   - Reconfirm employee understanding of category-specific spending caps.
+1. **Outlier Review**
+   - Audit the $972 transaction.
 2. **Vendor Strategy**
    - Negotiate bulk purchase agreements with Staples to secure better pricing, or diversify suppliers to reduce dependency.
 3. **Expense Classification Audit**
-   - Review Hilton transactions to confirm if they were miscoded or genuinely related to Office Supplies.
+   - Review Hilton transaction to confirm if it was miscoded or genuinely related to Office Supplies.
 4. **Timing Oversight**
    - Review weekend and holiday purchases for legitimacy and ensure proper approval processes are followed.
 5. **Ongoing Monitoring**
    - Implement automated alerts for:
-     - Transactions above category thresholds.
      - Vendors receiving >50% of spend in any category.
      - Employee spending exceeding +1.0 z-score in a given category.
+     - Vendor spending exceeding +1.5 z-score in a given category.
+     - Individual transactions exceeding +1.5 z-score in a given category.
      - Purchases made on weekends or recognized holidays.
 
 ---
