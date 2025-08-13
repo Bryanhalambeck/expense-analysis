@@ -28,11 +28,12 @@ The organization maintains clear expense policies to keep spending in check whil
 ---
 
 ### 💼 Business Scenario: Expense Review for Finance  
-You’re the sole data analyst supporting this small team. The finance lead has asked you to analyze the company’s expense records from the past year to spot early red flags, policy violations, or cost-saving opportunities.  
 
-You’ve been given a raw expense file that includes details like date, department, category, employee, vendor, and amount — all linked back to the same six employees who spend across every department.  
+You’re the sole data analyst supporting this small team. The finance lead has asked you to analyze the company’s expense records from the past year to spot early red flags, policy violations, or cost-saving opportunities. You’ve been given a raw expense file that includes details like date, department, category, employee, vendor, and amount — all linked back to the same six employees who spend across every department.
 
-Your goal is to turn this data into clear, actionable insights that help the team spend wisely and stick to budget as they grow — while flagging any spending patterns that look significantly above or below the fair share expected for each employee.  
+While the dataset covers the company’s entire operation, leadership requested actionable findings within a short turnaround to help guide upcoming budget discussions. Given the limited time frame, a full deep dive into every department–category pair wasn’t feasible. Instead, the approach focused on producing a high-level benchmarking heatmap to identify the most significant deviations from expected spending patterns, then applying detailed analysis methods to the highest-priority cases.
+
+Your goal is to turn this data into clear, actionable insights that help the team spend wisely and stick to budget as they grow — while flagging any spending patterns that look significantly above or below the fair share expected for each employee.
 
 ---
 
