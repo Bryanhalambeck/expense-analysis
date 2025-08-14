@@ -2,22 +2,6 @@
 
 ---
 
-## 📌 Executive Summary
-
-This project analyzes expense data for a small tech and professional services firm to uncover fairness concerns, policy violations, vendor risks, and unusual spending patterns.  
-
-It delivers two fully finalized analyses:  
-- **📊 Company-Wide Category Benchmarking** – A cross-department comparison showing where spending in department–category pairs falls above or below expected levels, visualized in a custom benchmark heatmap.  
-- **🧾 Detailed Analysis: Sales – Office Supplies** – A breakdown of one flagged department–category pair, including z-score outlier detection for employees and vendors, timing checks, vendor concentration analysis, and transaction-level anomaly detection.  
-
-These two analyses are complete, visualized, and explained in the README, showing the end-to-end workflow from raw data to actionable insight.  
-
-The `/exploration/` folder contains additional scripts that extend this risk-detection approach to the entire company. These are not finalized into README visuals or write-ups, but they demonstrate how the project could scale to a full-company audit — applying the same investigative principles through other methods.
-
-In short, the finalized pieces show **how a full, polished analysis looks**, while the exploratory scripts show **how the process could be expanded across all departments and categories**.
-
----
-
 ### 👤 Example Company Description  
 The company is a small, specialized tech and professional services firm run by a lean team of six core employees. This tight-knit group handles custom software development, IT support, marketing campaigns, sales operations, and HR tasks for a range of clients across industries.  
 
@@ -34,6 +18,22 @@ You’re our sole data analyst, and we need your help reviewing last year’s co
 While this dataset covers our entire operation, we need you to focus on delivering actionable findings within a short turnaround to help guide our upcoming budget discussions. Given the time constraints, we’re not expecting a detailed analysis into every department–category pair. Instead, apply your detailed analysis methods to the highest-priority cases.
 
 Your goal is to turn this data into clear, actionable insights that will help us spend wisely, stay within budget as we grow, and flag any spending patterns that look significantly above or below the fair share expected for each employee.
+
+---
+
+## 📌 Executive Summary
+
+This project analyzes expense data for a small tech and professional services firm to uncover fairness concerns, policy violations, vendor risks, and unusual spending patterns.  
+
+It delivers two fully finalized analyses:  
+- **📊 Company-Wide Category Benchmarking** – A cross-department comparison showing where spending in department–category pairs falls above or below expected levels, visualized in a custom benchmark heatmap.  
+- **🧾 Detailed Analysis: Sales – Office Supplies** – A breakdown of one flagged department–category pair, including z-score outlier detection for employees and vendors, timing checks, vendor concentration analysis, and transaction-level anomaly detection.  
+
+These two analyses are complete, visualized, and explained in the README, showing the end-to-end workflow from raw data to actionable insight.  
+
+The `/exploration/` folder contains additional scripts that extend this risk-detection approach to the entire company. These are not finalized into README visuals or write-ups, but they demonstrate how the project could scale to a full-company audit — applying the same investigative principles through other methods.
+
+In short, the finalized pieces show **how a full, polished analysis looks**, while the exploratory scripts show **how the process could be expanded across all departments and categories**.
 
 ---
 
