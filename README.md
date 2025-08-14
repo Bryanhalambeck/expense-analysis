@@ -308,7 +308,7 @@ These exploratory scripts were not fully polished into final charts or visuals i
 - 🧾 **Company-Wide Vendor Risk Analysis**  
   Analyzes how much spend flows to each vendor, flags over reliance and identifies single-use vendors.
   
--	🏷 **Vendor–Category Mismatch Check (planned)**
+-	🏷 **Vendor–Category Mismatch Check (planned)**  
   Scans for unusual vendor–category pairings (e.g., a hotel coded under Office Supplies), helping flag possible misclassifications or policy compliance issues that may not appear in high-level budget deviation checks.
 
 - 🔁 **Same-Day Vendor Repeats**  
