@@ -309,7 +309,7 @@ These exploratory scripts were not fully polished into final charts or visuals i
   Analyzes how much spend flows to each vendor, flags over reliance and identifies single-use vendors.
   
 -	🏷 **Vendor–Category Mismatch Check (planned)**
-Scans for unusual vendor–category pairings (e.g., a hotel coded under Office Supplies), helping flag possible misclassifications or policy compliance issues that may not appear in high-level budget deviation checks.
+  Scans for unusual vendor–category pairings (e.g., a hotel coded under Office Supplies), helping flag possible misclassifications or policy compliance issues that may not appear in high-level budget deviation checks.
 
 - 🔁 **Same-Day Vendor Repeats**  
   Checks for cases where an employee made multiple purchases from the same vendor on the same day — which could signal batching, duplicates, or policy issues.  
