@@ -63,7 +63,7 @@ This file contains 100 rows of fictional expense data from the small tech and se
 - **amount** – Transaction amount in USD  
 
 #### 🧾 Purpose:
-This file serves as the raw input for all analysis in this project. It was designed to mimic realistic company spending behavior, including:
+This file serves as the base dataset for all analysis in this project. It was designed to mimic realistic company spending behavior, including:
 
 - Overlapping responsibilities across employees and departments  
 - Diverse vendor usage  
